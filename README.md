@@ -35,6 +35,6 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 4. Run the bot using the following command:
 ```python3 -m bot```
 
-### Heroku Installation
+- ### Heroku Installation
 
-### soon
+- ### soon

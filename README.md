@@ -10,7 +10,7 @@ QuantumRoBot, formerly known as HyperSpeed, is a versatile Telegram bot designed
 
 ## Getting Started
 
-To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/QuantumRoBot`) and start exploring its features. Feel free to contribute to the project by submitting bug reports or creating pull requests.
+To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Quantum004Bot`) and start exploring its features. Feel free to contribute to the project by submitting bug reports or creating pull requests.
 
 ## How to Contribute
 
@@ -24,7 +24,7 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 
 - **Owner:** [@Otazuki](https://t.me/Otazuki)
 - **Network Username:** [@Hyper_Speed0](https://t.me/Hyper_Speed0)
-- **Bot Username:** [@QuantumRoBot](https://t.me/QuantumRoBot)
+- **Bot Username:** [@QuantumRoBot](https://t.me/Quantum004Bot)
 
 - ## Installation
 
@@ -32,11 +32,9 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 1. Clone the repository: `git clone https://github.com/Otazuki004/QuantumRoBot.git`
 2. Navigate to the project directory: `cd QuantumRoBot`
 3. Install required packages: `pip install -r requirements.txt`
-
-#### Running Locally
-Run the bot using the following command:
+4. Run the bot using the following command:
 ```python3 -m bot```
 
-## Heroku Installation
+#### Heroku Installation
 
 ##### soon

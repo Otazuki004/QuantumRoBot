@@ -25,3 +25,18 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 - **Owner:** [@Otazuki](https://t.me/Otazuki)
 - **Network Username:** [@Hyper_Speed0](https://t.me/Hyper_Speed0)
 - **Bot Username:** [@QuantumRoBot](https://t.me/QuantumRoBot)
+
+- ## Installation
+
+- #### Linux Environment
+1. Clone the repository: `git clone https://github.com/Otazuki004/QuantumRoBot.git`
+2. Navigate to the project directory: `cd QuantumRoBot`
+3. Install required packages: `pip install -r requirements.txt`
+
+#### Running Locally
+Run the bot using the following command:
+```python3 -m bot```
+
+## Heroku Installation
+
+##### soon

@@ -1,2 +1,27 @@
-# QuantumBot
-QuantumBot is a versatile Telegram bot designed to enhance your group chat experience. It comes packed with features like video and audio downloading, evaluation of code snippets, and much more. Whether you want to enjoy multimedia content or streamline administrative tasks, QuantumBot has you covered.
+# QuantumRoBot (formerly HyperSpeed)
+
+QuantumRoBot, formerly known as HyperSpeed, is a versatile Telegram bot designed to enhance your group chat experience. It comes packed with features like managing groups, performing magical tricks, and much more. Whether you want to streamline administrative tasks or add a touch of magic to your conversations, QuantumRoBot has you covered.
+
+## Features
+
+- **Group Management:** QuantumRoBot can help maintain and manage your Telegram group effectively.
+- **Magical Tricks:** Experience the magic as QuantumRoBot performs fun and surprising tricks.
+- **Multimedia:** Download videos and audio from popular platforms with ease.
+
+## Getting Started
+
+To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/QuantumRoBot`) and start exploring its features. Feel free to contribute to the project by submitting bug reports or creating pull requests.
+
+## How to Contribute
+
+If you're interested in contributing to QuantumRoBot, check out our [Contribution Guidelines](CONTRIBUTING.md) for details on how you can get involved.
+
+## Acknowledgments
+
+- Special thanks to the open-source community for their valuable contributions.
+
+## Contacts
+
+- **Owner:** [@Otazuki](https://t.me/Otazuki)
+- **Network Username:** [@Hyper_Speed0](https://t.me/Hyper_Speed0)
+- **Bot Username:** [@QuantumRoBot](https://t.me/QuantumRoBot)

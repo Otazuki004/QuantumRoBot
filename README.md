@@ -38,3 +38,12 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 - ### Heroku Installation
 
 - ### soon
+
+## About
+
+- #### Version: N/A
+- #### Minimum Pyrogram Version 2+
+- #### Required All Packages Versions are be latest
+- #### Support Group Available
+- #### New Update Within 5 Weeks
+- #### Old Versions Not be supported

@@ -1,6 +1,6 @@
 # QuantumRoBot
 
-QuantumRoBot, is a HyperSpeed product, is Telegram bot designed to enhance your group chat experience. It comes packed with features like managing groups, performing magical tricks, and much more. Whether you want to streamline administrative tasks or add a touch of magic to your conversations, QuantumRoBot has you covered.
+QuantumRoBot, is a Telegram bot designed to enhance your group chat experience. It comes packed with features like managing groups, performing magical tricks, and much more. Whether you want to streamline administrative tasks or add a touch of magic to your conversations, QuantumRoBot has you covered.
 
 ## Features
 

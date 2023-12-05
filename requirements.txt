@@ -1,0 +1,6 @@
+pyrogram
+wget
+yt_dlp
+youtube_search
+tracebackk
+subprocess

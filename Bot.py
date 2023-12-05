@@ -206,20 +206,19 @@ def Alive(client, message):
 
 
 
-#StopProgramModule
-def stop_program():
+#RestartProgramModule
+def restart_program():
     python = sys.executable
     os.execl(python, python, *sys.argv)
-    exit()
 
-@bot.on_message(filters.command("stop") & filters.user(ODEV))
+@bot.on_message(filters.command("restart") & filters.user(ODEV))
 def restartbot(client, message):
     print ("stoped By Owner")
-    stop_program()
+    restart_program()
     
     
     
-#StopProgramEND
+#restartProgramEND
 
 
 #NewModulesEvalCode

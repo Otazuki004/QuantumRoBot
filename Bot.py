@@ -213,7 +213,8 @@ def restart_program():
 
 @bot.on_message(filters.command("restart") & filters.user(ODEV))
 def restartbot(client, message):
-    print ("stoped By Owner")
+    print ("Restarting")
+    bot.send_message(message.chat.id, "restarting")
     restart_program()
     
     
@@ -226,7 +227,7 @@ def restartbot(client, message):
 @bot.on_message(filters.command(["run","eval"],["?","!",".","*","/","$"]) & filters.user(ODEV))
 async def eval(client, message):
     if len(message.text.split()) <2:
-          return await message.reply_text("`Input Not Found!`")
+          return await message.reply_text("`No input?`")
     status_message = await message.reply_text("Processing ...")
     cmd = message.text.split(None, 1)[1]
     start = datetime.now()
@@ -263,9 +264,9 @@ async def eval(client, message):
     ping = (end-start).microseconds / 1000
     final_output = "<b>📎 Input</b>: "
     final_output += f"<code>{cmd}</code>\n\n"
-    final_output += "<b>📒 Output</b>:\n"
+    final_output += "<b> ⚙️ Output</b>:\n"
     final_output += f"<code>{evaluation.strip()}</code> \n\n"
-    final_output += f"<b>✨ Taken Time</b>: {ping}<b>ms</b>"
+    final_output += f"<b>✨ Time</b>: {ping}<b>ms</b>"
     if len(final_output) > 4096:
         with io.BytesIO(str.encode(final_output)) as out_file:
             out_file.name = "eval.text"

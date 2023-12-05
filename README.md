@@ -33,8 +33,9 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 - ### Heroku Installation
 
-- ###
-- <a href="https://heroku.com/deploy?template=https://github.com/Otazuki004/QuantumRoBot"><img src="https://www.herokucdn.com/deploy/button.svg" height="40"></a>
+- Click Deploy option below Click Heroku and Add Vars After click Deploy in heroku if deploy success open your heroku app click 2nd Option and Turn on the dynos And Check Logs if no error You successfully deployed
+
+<a href="https://heroku.com/deploy?template=https://github.com/Otazuki004/QuantumRoBot"><img src="https://www.herokucdn.com/deploy/button.svg" height="40"></a>
 
 ## About
 

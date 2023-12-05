@@ -1,6 +1,6 @@
 FROM python:3.10.0
 
-WORKDIR /root/QuantumRoBot
+WORKDIR /root/
 
 COPY . .
 

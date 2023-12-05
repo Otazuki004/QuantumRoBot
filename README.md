@@ -37,21 +37,22 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 ## About
 
-- #### Version: 0.1 (U/D)
+- #### Version: 0.1 (Beta)
 - #### Minimum Pyrogram Version 2+
 - #### Required All Packages Versions are be latest
 - #### Support Group Available
 - #### New Update Within 5 Weeks
 - #### Old Versions Not be supported
 - #### Local Deployment Tested OK
+- #### Versions Download: N/A
 
 ## Support
 
-- #### UNDER DEVLOVMENT NO SUPPORT
+- If you Have errors or Something else please join To Support Group in Telegram Username Is `t.me/FutureCity005` Or Complaint Issue in GitHub, Have a Nice Day
 
 ## Developers
 
-- ### [Otazuki]
-- ### [Chat-Gpt]
-- ### [Tofu]
-- ### [Gtash]
+- ### Otazuki
+- ### Gtash
+- ### Tofu
+- ### Chat-Gpt

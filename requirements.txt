@@ -1,6 +1,5 @@
 pyrogram
 wget
 yt_dlp
-youtube_search
-tracebackk
-subprocess
+youtube_search_python
+youtube_dl

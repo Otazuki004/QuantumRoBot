@@ -33,7 +33,8 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 - ### Heroku Installation
 
-- ### soon
+- ###
+- <a href="https://heroku.com/deploy?template=https://github.com/Otazuki004/QuantumRoBot"><img src="https://www.herokucdn.com/deploy/button.svg" height="40"></a>
 
 ## About
 

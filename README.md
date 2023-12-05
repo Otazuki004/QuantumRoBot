@@ -33,7 +33,7 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 2. Navigate to the project directory: `cd QuantumRoBot`
 3. Install required packages: `pip install -r requirements.txt`
 4. Run the bot using the following command:
-```python3 -m bot```
+```python3 -m Bot```
 
 - ### Heroku Installation
 
@@ -47,3 +47,4 @@ If you're interested in contributing to QuantumRoBot, check out our [Contributio
 - #### Support Group Available
 - #### New Update Within 5 Weeks
 - #### Old Versions Not be supported
+- #### Local Deploy Tested OK

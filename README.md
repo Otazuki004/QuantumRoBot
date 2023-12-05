@@ -12,10 +12,6 @@ QuantumRoBot, is a HyperSpeed product, is Telegram bot designed to enhance your 
 
 To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Quantum004Bot`) and start exploring its features. Feel free to contribute to the project by submitting bug reports or creating pull requests.
 
-## How to Contribute
-
-If you're interested in contributing to QuantumRoBot, check out our [Contribution Guidelines](CONTRIBUTING.md) for details on how you can get involved.
-
 ## Acknowledgments
 
 - Special thanks to the open-source community for their valuable contributions.

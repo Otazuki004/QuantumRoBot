@@ -48,7 +48,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 ## Support
 
-- If you Have errors or Something else please join To Support Group in Telegram Username Is `t.me/FutureCity005` Or Complaint Issue in GitHub, Have a Nice Day
+- #### If you Have errors or Something else please join To Support Group in Telegram Username Is `t.me/FutureCity005` Or Complaint Issue in GitHub, Have a Nice Day
 
 ## Developers
 

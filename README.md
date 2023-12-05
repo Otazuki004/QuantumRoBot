@@ -51,6 +51,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 ## Developers
 
-- ### [Otazuki](GitHub.com/Otazuki004)
-- ### [Chat-Gpt](openai.com)
-- ### [Tofu](GitHub.com/Awesome-tofu)
+- ### [Otazuki]
+- ### [Chat-Gpt]
+- ### [Tofu]
+- ### [Gtash]

@@ -44,3 +44,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 - #### New Update Within 5 Weeks
 - #### Old Versions Not be supported
 - #### Local Deploy Tested OK
+
+## Support
+
+- #### UNDER DEVLOVMENT NO SUPPORT

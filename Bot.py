@@ -19,7 +19,7 @@ bot = Client("my_bot", bot_token="6910428877:AAFIFbleAgAtf42tNQuty-gRbl4ybWIIPCQ
 #yourVariables Here↓
 OWN = 5965055071 #OWNERID
 CHAT_M = " " #MainGroupID
-B_NAME = "QuantumBot" #Botname
+B_NAME = "QuantumRoBot" #Botname
 OWN_NAME = "Otazuki" #Ownername
 OWN_USRNAMER = "Otazuki" #OwnerUsername
 DEV = 6568136732 #Add DEV Id
@@ -374,14 +374,14 @@ Lᴀsᴛ Uᴘᴅᴀᴛᴇ : --:--:--
 Pᴀᴛᴄʜ Nᴀᴍᴇ : Under Devlopment
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Nᴇxᴛ Pᴀᴛᴄʜ Dᴀᴛᴇ : 1:1:24
-Nᴇxᴛ Pᴀᴛᴄʜ Nᴀᴍᴇ : Relese (Next Level Codes)
+Nᴇxᴛ Pᴀᴛᴄʜ Nᴀᴍᴇ : Release
 
-Click Help To know My Ultra Powers⚡**
+Click Help To know My Magical Powers⚡**
 """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"[► Add {B_NAME} To Unlock Magics◄]",
+            text=f"[► Add {B_NAME} Me In Group ◄]",
             url=f"https://telegram.dog/Quantum004Bot?startgroup=true",
         )
     ],
@@ -391,7 +391,7 @@ callback_data="help"),
     ],
     [
         InlineKeyboardButton(
-            text="[► Support Chat ◄]", url=f"https://telegram.dog/{S_URL}"
+            text="[► Support ◄]", url=f"https://telegram.dog/{S_URL}"
         ),
         InlineKeyboardButton(text="📢 Updates", url="https://telegram.dog/Hyper_Speed0"),
     ],
@@ -444,6 +444,12 @@ def start(bot, message):
     )
 
 #GroupStartEND
+
+#NewModuleAdmins
+
+
+#AdminsEND
+
 #------------
 bot.run() #|
 #------------

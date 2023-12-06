@@ -366,7 +366,7 @@ ADM = f"""**
 START = f"""**
 ────「 [{B_F_N}](https://graph.org//file/3650014818cd34600f408.jpg) 」────
 Hᴇʏ, User!!
-I ᴀᴍ {B_NAME} I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴡᴛᴜʀᴇs
+I ᴀᴍ {B_NAME} I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [Pᴀᴛᴄʜ Uᴘᴅᴀᴛᴇ Dᴇᴛᴀɪʟs]
 ➖➖➖➖➖➖➖➖➖➖
@@ -374,7 +374,7 @@ Lᴀsᴛ Uᴘᴅᴀᴛᴇ : --:--:--
 Pᴀᴛᴄʜ Nᴀᴍᴇ : Under Devlopment
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Nᴇxᴛ Pᴀᴛᴄʜ Dᴀᴛᴇ : 1:1:24
-Nᴇxᴛ Pᴀᴛᴄʜ Nᴀᴍᴇ : Release
+Nᴇxᴛ Pᴀᴛᴄʜ Nᴀᴍᴇ : Release (ᴠ1)
 
 Click Help To know My Magical Powers⚡**
 """

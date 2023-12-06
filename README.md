@@ -37,7 +37,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 ## About
 
-- #### Version: 0.1 (Beta)
+- #### Version: 0.01 (Beta)
 - #### Minimum Pyrogram Version 2+
 - #### Required All Packages Versions are be latest
 - #### Support Group Available

@@ -211,7 +211,7 @@ def restart_program():
     python = sys.executable
     os.execl(python, python, *sys.argv)
 
-@bot.on_message(filters.command("restart") & filters.user(ODEV))
+@bot.on_message(filters.command("restart") & filters.user(DEV))
 def restartbot(client, message):
     print ("Restarting")
     bot.send_message(message.chat.id, "restarting")
@@ -306,12 +306,12 @@ async def sh(client, message):
 
 tate = [
     [
-InlineKeyboardButton("DEV COMMANDS", 
+InlineKeyboardButton("Developer Commands", 
 callback_data="dhelp"),
     ],
     [
 
-InlineKeyboardButton("ADMIN COMMANDS ", 
+InlineKeyboardButton("Administrator Commands", 
 callback_data="adminp"),
     ],
 ]
@@ -320,10 +320,8 @@ callback_data="adminp"),
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**
-♡︎𝗗𝗲𝘃 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀♡︎
-
 /eval - To run A Code
-/logs - Get A Bot Logs
+/restart - Restart The While Bot (Owner Only)
 /sh - To Run Shell Codes
 **
 """,
@@ -337,8 +335,6 @@ async def cbbasic(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**
-♡︎𝗡𝗼𝗿𝗺𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀♡︎
-
 /song - To Get what song you want 
 /video - To Get What Video you Want 
 /alive - To Check bot alive or not
@@ -383,8 +379,8 @@ Click Help To know My Ultra Powers⚡**
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"[► Add Vexera To Your Group ◄]",
-            url=f"https://telegram.dog/Vexera_50_bot?startgroup=true",
+            text=f"[► Add {B_NAME} To Unlock Magics◄]",
+            url=f"https://telegram.dog/Quantum004Bot?startgroup=true",
         )
     ],
     [
@@ -393,7 +389,7 @@ callback_data="help"),
     ],
     [
         InlineKeyboardButton(
-            text="[► Support ◄]", url=f"https://telegram.dog/FutureCity005"
+            text="[► Support Chat ◄]", url=f"https://telegram.dog/FutureCity005"
         ),
         InlineKeyboardButton(text="📢 Updates", url="https://telegram.dog/Hyper_Speed0"),
     ],
@@ -415,7 +411,7 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
     text = ADM,
     reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="help")]]
+            [[InlineKeyboardButton("🔙 Back", callback_data="help")]]
         ),
     )
 
@@ -425,12 +421,12 @@ async def cbbasic(_, query: CallbackQuery):
 #GroupStartModule
 
 STA1= f"""**
-── 𝙑𝙚𝙭𝙚𝙧𝙖 ──
+── {B_F_N} ──
 
 ۞ I'ᴍ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ Pᴏᴡᴇʀғᴜʟ Bᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™
 .
 ۞ I'ᴍ Aʟᴡᴀʏs Wᴏʀᴋ & Uʟᴛʀᴀ Sᴘᴇᴇᴅ & Hᴇʟᴘ Tᴏ ᴍᴀɴɢᴇ Yᴏᴜʀ ɢʀᴏᴜᴘ ♡
-۞ Usᴇ ɴᴏᴡ!
+۞ Usᴇ ᴍᴇ ᴛᴏ Kɴᴏᴡ Wʜᴀᴛ ɪs Mᴀɢɪᴄ!
 """
 PIC = (
  "https://telegra.ph/file/c4b5257049c672290306e.jpg", "https://telegra.ph/file/4135682365c0754618cf5.jpg", "https://telegra.ph/file/1dcfff90307b6f45de00e.jpg"

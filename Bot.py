@@ -381,7 +381,7 @@ Click Help To know My Magical Powers⚡**
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"[► Add {B_NAME} Me In Group ◄]",
+            text=f"[► Add {B_NAME} In Your Group ◄]",
             url=f"https://telegram.dog/Quantum004Bot?startgroup=true",
         )
     ],

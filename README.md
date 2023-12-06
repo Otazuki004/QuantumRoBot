@@ -35,6 +35,10 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 - ##### Fork The Repository Edit Variables In Bot.py And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
 
+- ### IDE Installation
+
+- ##### Download The Repository and Edit Variables In `Bot.py` And use `cd QuantumRoBot` Must be unzip And `python3 -m Bot` if Got Error Or Something else Ask in Support And Give Issue in Github
+
 ## About
 
 - #### Version: 0.01 (Beta)
@@ -56,3 +60,13 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 - ### Gtash
 - ### Tofu
 - ### Chat-Gpt
+
+## Tested Environments
+
+- #### Termux-Letest [Tested OK]
+- #### Pyroid-MobilePythonIDE [Tested OK]
+- #### Heroku [Not Tested ❌❌]
+
+## Tearms And Privacy
+
+- soon

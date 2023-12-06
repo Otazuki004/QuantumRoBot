@@ -24,6 +24,8 @@ OWN_NAME = "Otazuki" #Ownername
 OWN_USRNAMER = "Otazuki" #OwnerUsername
 DEV = 6568136732 #Add DEV Id
 ODEV = [OWN, DEV]
+B_F_N = "𝙌𝙪𝙖𝙣𝙩𝙪𝙢𝙍𝙤𝘽𝙤𝙩" #Bot in font
+S_URL = "FutureCity005" #Support Group url
 
 #---------
 
@@ -338,7 +340,7 @@ async def cbbasic(_, query: CallbackQuery):
 /song - To Get what song you want 
 /video - To Get What Video you Want 
 /alive - To Check bot alive or not
-/id - Get a User Id/Chat ID💖
+/id - Get a User Id/Chat ID
 /help - To Check a Bot Commands
 /tm - Reply a media To Get telegra.ph link
 /dice - Bot send you random dice
@@ -362,9 +364,9 @@ ADM = f"""**
 """
 
 START = f"""**
-────「 [](https://graph.org//file/3650014818cd34600f408.jpg) 」────
+────「 [{B_F_N}](https://graph.org//file/3650014818cd34600f408.jpg) 」────
 Hᴇʏ, User!!
-I ᴀᴍ Vᴇxᴇʀᴀ I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴡᴛᴜʀᴇs
+I ᴀᴍ {B_NAME} I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴡᴛᴜʀᴇs
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [Pᴀᴛᴄʜ Uᴘᴅᴀᴛᴇ Dᴇᴛᴀɪʟs]
 ➖➖➖➖➖➖➖➖➖➖
@@ -389,7 +391,7 @@ callback_data="help"),
     ],
     [
         InlineKeyboardButton(
-            text="[► Support Chat ◄]", url=f"https://telegram.dog/FutureCity005"
+            text="[► Support Chat ◄]", url=f"https://telegram.dog/{S_URL}"
         ),
         InlineKeyboardButton(text="📢 Updates", url="https://telegram.dog/Hyper_Speed0"),
     ],

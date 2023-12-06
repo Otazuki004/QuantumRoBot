@@ -33,7 +33,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 - ### Heroku Installation
 
-- ##### Fork The Repository Edit Variables And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
+- ##### Fork The Repository Edit Variables In Bot.py And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
 
 ## About
 

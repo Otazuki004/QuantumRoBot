@@ -3,7 +3,7 @@ from vars import *
 
 print("booting os")
 
-op = yes 
+op = "yes"
 
 if op == "yes":
   bot.send_message(OWN, "Lets boot the os")

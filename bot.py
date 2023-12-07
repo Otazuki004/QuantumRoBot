@@ -1,6 +1,18 @@
 #Main Codes
 import subprocess
 
+from pyrogram import Client
+
+#variables
+from vars import *
+#END
+
+#BOOT
+print("no exinternel commands booting normal")
+
+#BOOTEND
+
+#helper
 import asyncio
 
 async def aexec(code, client, message):
@@ -9,13 +21,7 @@ async def aexec(code, client, message):
         ''.join(f'\n {l}' for l in code.split('\n'))
     )
     return await locals()['__ex'](client, message)
-
-from pyrogram import Client
-
-#variables
-from vars import *
-#END
-
+#helperEND
 #Imports
 from datetime import datetime
 import io
@@ -34,7 +40,7 @@ import traceback
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
-#-------
+#MainCodesEND-------
 
 #Codedown
 

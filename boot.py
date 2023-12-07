@@ -9,7 +9,7 @@ op = "yes"
 
 if op == "yes":
   bot.send_message(OWN, "Lets boot the os")
-  command = "python3 -m bot"
+  command = "python3 -m Bot"
   result = subprocess.run(command, shell=True, capture_output=True, text=True)
 
   print("Output:", result.stdout)

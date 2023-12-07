@@ -436,7 +436,3 @@ def start(bot, message):
 
 
 #AdminsEND
-
-#------------
-bot.run() #|
-#------------

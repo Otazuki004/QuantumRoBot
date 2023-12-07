@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from vars import bot
 from vars import *
 
 print("booting os")

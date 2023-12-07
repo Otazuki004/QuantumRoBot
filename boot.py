@@ -12,4 +12,4 @@ else:
   exit()
 
 
-bot.start()
+

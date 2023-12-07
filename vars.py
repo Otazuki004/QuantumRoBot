@@ -11,5 +11,3 @@ DEV = "6916220465" #Add DEV Id
 ODEV = [OWN, DEV]
 B_F_N = "𝙌𝙪𝙖𝙣𝙩𝙪𝙢𝙍𝙤𝘽𝙤𝙩" #Bot in font
 S_URL = "FutureCity005" #Support Group url
-
-bot.start()

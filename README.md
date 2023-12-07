@@ -29,15 +29,15 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 2. Navigate to the project directory: `cd QuantumRoBot`
 3. Install required packages: `pip install -r requirements.txt`
 4. Run the bot using the following command:
-```python3 -m Bot```
+```python3 -m bot```
 
 - ### Heroku Installation
 
-- ##### Fork The Repository Edit Variables In Bot.py And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
+- ##### Fork The Repository Edit Variables In `bot.py` And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
 
 - ### IDE Installation
 
-- ##### Download The Repository and Edit Variables In `Bot.py` And use `cd QuantumRoBot` Must be unzip And `python3 -m Bot` if Got Error Or Something else Ask in Support And Give Issue in Github
+- ##### Download The Repository and Edit Variables In `bot.py` And use `cd QuantumRoBot` Must be unzip And `python3 -m bot` if Got Error Or Something else Ask in Support And Give Issue in Github
 
 ## About
 

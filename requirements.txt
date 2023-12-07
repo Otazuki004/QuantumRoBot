@@ -5,3 +5,4 @@ youtube_search_python
 youtube_dl
 TgCrypto
 youtube_search
+ffmpeg

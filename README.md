@@ -27,7 +27,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 - ### Linux Environment
 1. Clone the repository: `git clone https://github.com/Otazuki004/QuantumRoBot.git`
 2. Navigate to the project directory: `cd QuantumRoBot
-3. `
+3. Add your vars in `vars.py`
 5. Install required packages: `pip install -r requirements.txt`
 6. Run the bot using the following command:
 ```python3 -m boot```

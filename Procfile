@@ -1,1 +1,1 @@
-worker: python3 -m boot
+worker: python3 -m bot

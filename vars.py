@@ -1,3 +1,5 @@
+from pyrogram import *
+
 bot = Client("QuantumRobot", bot_token="6910428877:AAFIFbleAgAtf42tNQuty-gRbl4ybWIIPCQ", api_id=10187126, api_hash="ff197c0d23d7fe54c89b44ed092c1752")
 #yourVariables Here↓
 OWN = 5965055071 #OWNERID

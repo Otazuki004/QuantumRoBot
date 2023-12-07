@@ -1,4 +1,4 @@
-from pyrogram import *
+from pyrogram import Client, filters
 from vars import *
 
 print("booting os")

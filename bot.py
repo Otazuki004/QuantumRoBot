@@ -1,16 +1,10 @@
 #Main Codes
-import subprocess
-
 from pyrogram import Client
 
 #variables
 from vars import *
 #END
 
-#BOOT
-print("no exinternel commands booting normal")
-
-#BOOTEND
 
 #helper
 import asyncio
@@ -23,6 +17,7 @@ async def aexec(code, client, message):
     return await locals()['__ex'](client, message)
 #helperEND
 #Imports
+import subprocess
 from datetime import datetime
 import io
 import os

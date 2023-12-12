@@ -22,6 +22,7 @@ from datetime import datetime
 import io
 import os
 import sys
+from pyppeteer import launch
 import requests
 import wget
 import random
@@ -438,7 +439,33 @@ def start(bot, message):
 
 #AdminsEND
 
+#NewModuleWebSS
 
+# Function to take screenshot
+async def take_screenshot(url):
+  browser = await launch(headless=True)
+  page = await browser.newPage()
+  await page.setViewport({'width': 1280, 'height': 720})
+  await page.goto(url)
+  await page.waitForSelector('body')
+  screenshot = await page.screenshot()
+  await browser.close()
+  return screenshot
+
+# Handle screenshot command
+@bot.on_message(filters.command("screenshot"))
+async def screenshot_handler(bot, message):
+  if message.reply_to_message and message.reply_to_message.text:
+    url = message.reply_to_message.text
+    try:
+      screenshot = await take_screenshot(url)
+      await bot.send_photo(message.chat.id, screenshot)
+    except Exception as e:
+      await bot.send_message(message.chat.id, f"Error: {e}")
+  else:
+    await bot.send_message(message.chat.id, "Please reply to a message containing the URL you want to take a screenshot of.")
+
+#WebSSEND
 
 
 

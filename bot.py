@@ -453,18 +453,14 @@ async def take_screenshot(url):
   return screenshot
 
 # Handle screenshot command
-@bot.on_message(filters.command("screenshot"))
+@bot.on_message(filters.command("webss"))
 async def screenshot_handler(bot, message):
-  if message.reply_to_message and message.reply_to_message.text:
-    url = message.reply_to_message.text
+    url = " ".join(message.command[1:])
     try:
       screenshot = await take_screenshot(url)
       await bot.send_photo(message.chat.id, screenshot)
     except Exception as e:
       await bot.send_message(message.chat.id, f"Error: {e}")
-  else:
-    await bot.send_message(message.chat.id, "Please reply to a message containing the URL you want to take a screenshot of.")
-
 #WebSSEND
 
 

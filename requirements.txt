@@ -6,3 +6,4 @@ youtube_dl
 TgCrypto
 youtube_search
 ffmpeg
+pyppeteer

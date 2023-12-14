@@ -458,9 +458,18 @@ def webss(client, message):
     else:
         # Send an error message if the url is invalid
         message.reply("Please provide a valid url.")
+	   
 #WebSSEND
+#NewModuleStopBot
+def kill():
+    exit()
 
-
+@bot.on_message(filters.regex("/stop") & filters.user(OWN))
+def killbot(client, message):
+    print ("Force Stoping bot..")
+    bot.send_message(message.chat.id, "success")
+    kill()
+#Exprementsss
 
 
 

@@ -28,6 +28,7 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 1. Clone the repository: `git clone https://github.com/Otazuki004/QuantumRoBot.git`
 2. Navigate to the project directory: `cd QuantumRoBot
 3. Add your vars in `vars.py`
+4. Run This Command `pkg install libjpeg-turbo` if error Run This `apt install libjpeg-turbo` else Ask in Support or DM me [Otazuki](https://t.me/Otazuki/) 
 5. Install required packages: `pip install -U -r requirements.txt`
 6. Run the bot using the following command:
 ```python3 -m bot```

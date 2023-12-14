@@ -455,6 +455,7 @@ def webss(client, message):
         img.save(name)
         # Send the image as a document to the chat
         message.reply_document(document=open(name, "rb"))
+	os.remove(name)
     else:
         # Send an error message if the url is invalid
         message.reply("Please provide a valid url.")

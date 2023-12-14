@@ -31,6 +31,7 @@ from pyrogram import filters, enums
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 from pyrogram.errors import MessageTooLong
+import pyscreenshot
 from subprocess import getoutput as run
 import traceback
 from contextlib import redirect_stdout
@@ -440,27 +441,23 @@ def start(bot, message):
 #AdminsEND
 
 #NewModuleWebSS
-
-# Function to take screenshot
-async def take_screenshot(url):
-  browser = await launch(headless=True)
-  page = await browser.newPage()
-  await page.setViewport({'width': 1280, 'height': 720})
-  await page.goto(url)
-  await page.waitForSelector('body')
-  screenshot = await page.screenshot()
-  await browser.close()
-  return screenshot
-
-# Handle screenshot command
+# Define a handler function for /webss command
 @bot.on_message(filters.command("webss"))
-async def screenshot_handler(bot, message):
-    url = " ".join(message.command[1:])
-    try:
-      screenshot = await take_screenshot(url)
-      await bot.send_photo(message.chat.id, screenshot)
-    except Exception as e:
-      await bot.send_message(message.chat.id, f"Error: {e}")
+def webss(client: Client, message: Message):
+    # Get the url from the command argument
+    url = message.command[1]
+    # Check if the url is valid
+    if url.startswith("http://") or url.startswith("https://"):
+        # Take a screenshot of the web page using pyscreenshot
+        img = pyscreenshot.grab(url=url)
+        # Save the image as a temporary file
+        name = "temp.png"
+        img.save(name)
+        # Send the image as a document to the chat
+        message.reply_document(document=open(name, "rb"))
+    else:
+        # Send an error message if the url is invalid
+        message.reply("Please provide a valid url.")
 #WebSSEND
 
 

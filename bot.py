@@ -22,7 +22,6 @@ from datetime import datetime
 import io
 import os
 import sys
-from pyppeteer import launch
 import requests
 import wget
 import random

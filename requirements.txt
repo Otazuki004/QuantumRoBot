@@ -7,3 +7,4 @@ TgCrypto
 youtube_search
 ffmpeg
 pyscreenshot
+pillow

@@ -203,7 +203,7 @@ def restart_program():
     os.execl(python, python, *sys.argv)
     exit()
 
-@bot.on_message(filters.command("restart") & filters.user(DEV))
+@bot.on_message(filters.command("restart") & filters.user(OWN))
 def restartbot(client, message):
     print ("Restarting")
     bot.send_message(message.chat.id, "restarting")

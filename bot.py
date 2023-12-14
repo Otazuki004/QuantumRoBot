@@ -201,6 +201,7 @@ def Alive(client, message):
 def restart_program():
     python = sys.executable
     os.execl(python, python, *sys.argv)
+    exit()
 
 @bot.on_message(filters.command("restart") & filters.user(DEV))
 def restartbot(client, message):
@@ -442,9 +443,9 @@ def start(bot, message):
 #NewModuleWebSS
 # Define a handler function for /webss command
 @bot.on_message(filters.command("webss"))
-def webss(client: Client, message: Message):
+def webss(client, message):
     # Get the url from the command argument
-    url = message.command[1]
+    url = " ".join(message.command[1:])
     # Check if the url is valid
     if url.startswith("http://") or url.startswith("https://"):
         # Take a screenshot of the web page using pyscreenshot

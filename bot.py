@@ -484,7 +484,8 @@ async def urban_dictionary(_, message):
             f'https://api.urbandictionary.com/v0/define?term={text}').json()
           reply_text = f"""
 **Results: {text}**
-**⚠️ Warning Urban Dictionary Never Provide Accurate Answers ⚠️**
+
+**⚠️ Warning Urban Dictionary Not Always Provide Accurate Answers ⚠️**
 
 {results["list"][0]["definition"]}\n\n_{results["list"][0]["example"]}_'
 """

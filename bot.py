@@ -445,7 +445,7 @@ def start(bot, message):
 @bot.on_message(filters.command("webss"))
 def webss(client, message):
     # Get the url from the command argument
-    url = " ".join(message.command[1:])
+    url = message.command[1]
     # Check if the url is valid
     if url.startswith("http://") or url.startswith("https://"):
         # Take a screenshot of the web page using pyscreenshot

@@ -359,7 +359,7 @@ ADM = f"""**
 
 START = f"""**
 ────「 [{B_F_N}]({ST_PIC}) 」────
-Hello, {U_F_N}
+Hello, {message.from_user.first_name}
 I am {B_NAME} I can Help you in Everything
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [About Me]

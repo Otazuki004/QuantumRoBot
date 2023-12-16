@@ -23,8 +23,6 @@ import subprocess
 from datetime import datetime
 import io
 import os
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import time
 import sys
 import requests
@@ -35,7 +33,6 @@ from pyrogram import filters, enums
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 from pyrogram.errors import MessageTooLong
-import pyscreenshot
 from subprocess import getoutput as run
 import traceback
 from contextlib import redirect_stdout
@@ -445,45 +442,28 @@ def start(bot, message):
 
 #AdminsEND
 
-#NewModuleWebSS
+#NewModuleping
 
-@bot.on_message(filters.command("webss"))
-def webss(client, message):
-    # Get the url from the command argument
-    url = " ".join(message.command[1:])
-    
-    # Check if the url is valid
-    if url.startswith("http://") or url.startswith("https://"):
-        # Set up Chrome options (headless mode)
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")
+bot_start_time = datetime.now()
 
-        # Create a webdriver
-        driver = webdriver.Chrome(options=chrome_options)
+@bot.on_message(filters.command("ping"))
+def ping_pong(client, message):
+    # Calculate the bot's response time
+    start_time = bot_start_time
+    end_time = datetime.now()
 
-        try:
-            # Navigate to the webpage
-            driver.get(url)
+    # Calculate the round-trip time
+    ping_time = (end_time - start_time).total_seconds() * 1000
 
-            # Adjust sleep time based on the webpage loading time
-            time.sleep(5)
+    # Calculate the bot's uptime
+    uptime = (end_time - bot_start_time).total_seconds()
+    hours, remainder = divmod(uptime, 3600)
+    minutes, seconds = divmod(remainder, 60)
 
-            # Capture screenshot
-            screenshot_path = "screenshot.png"
-            driver.save_screenshot(screenshot_path)
+    # Send the ping-pong message with uptime
+    message.reply_text(f"Pong! Response time: {ping_time:.2f} ms\nUptime: {int(hours)}h {int(minutes)}m {int(seconds)}s")
 
-            # Send the image as a document to the chat
-            message.reply_document(document=open(screenshot_path, "rb"))
-        except Exception as e:
-            print(f"An error occurred: {str(e)}")
-            message.reply("Error capturing the webpage.")
-        finally:
-            # Close the browser
-            driver.quit()
-    else:
-        # Send an error message if the url is invalid
-        message.reply("Please provide a valid URL.")	   
-#WebSSEND
+#pingEND
 #NewModuleStopBot
 def kill():
     exit()

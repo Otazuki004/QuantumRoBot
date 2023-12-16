@@ -317,6 +317,7 @@ async def cbbasic(_, query: CallbackQuery):
 /eval - To run A Code
 /restart - Restart The While Bot (Owner Only)
 /sh - To Run Shell Codes
+/stop - To Stop The Bot (Owner Only)
 **
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -337,6 +338,7 @@ async def cbbasic(_, query: CallbackQuery):
 /tm - Reply a media To Get telegra.ph link
 /dice - Bot send you random dice
 /ping - To Check ping
+/ud - Get Results From Urban Dictionary
 **
 """,
         reply_markup=InlineKeyboardMarkup (tate),

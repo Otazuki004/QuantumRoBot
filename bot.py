@@ -359,18 +359,20 @@ ADM = f"""**
 
 START = f"""**
 ────「 [{B_F_N}]({ST_PIC}) 」────
-Hello, 
-I ᴀᴍ {B_NAME} I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs
+Hello,
+I am {B_NAME} I can Help You in Everything
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-[Pᴀᴛᴄʜ Uᴘᴅᴀᴛᴇ Dᴇᴛᴀɪʟs]
+[About Me]
 ➖➖➖➖➖➖➖➖➖➖
-Lᴀsᴛ Uᴘᴅᴀᴛᴇ : --:--:--
-Pᴀᴛᴄʜ Nᴀᴍᴇ : Under Devlopment
+Last Update: --:--:--
+Next Update: 1:1:2024
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Nᴇxᴛ Pᴀᴛᴄʜ Dᴀᴛᴇ : 1:1:24
-Nᴇxᴛ Pᴀᴛᴄʜ Nᴀᴍᴇ : Release (ᴠ1)
+Pyrogram Version: 
+{B_NAME} Version: 0.001
+Patch Name: Beta(Limited)
+➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-Click Help To know My Magical Powers⚡**
+Try To Touch Help Button To Know My Powers⚡**
 """
 buttons = [
     [

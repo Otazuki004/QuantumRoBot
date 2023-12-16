@@ -15,3 +15,6 @@ n_boot = "NO" #Do you need Boot exinternal OS? if Yes Add "YES"
 data_col = True #Leave it
 data_store_id = "None" #Leave it because i need it HEHE
 B_US = "Quantum004bot" # Bot Username
+
+#ImageSection
+ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Picture

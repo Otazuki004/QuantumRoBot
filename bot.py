@@ -443,24 +443,43 @@ def start(bot, message):
 #AdminsEND
 
 #NewModuleWebSS
-# Define a handler function for /webss command
+
 @bot.on_message(filters.command("webss"))
 def webss(client, message):
     # Get the url from the command argument
     url = " ".join(message.command[1:])
+    
     # Check if the url is valid
     if url.startswith("http://") or url.startswith("https://"):
-        # Take a screenshot of the web page using pyscreenshot
-        img = pyscreenshot.grab(url=url)
-        # Save the image as a temporary file
-        name = "temp.png"
-        img.save(name)
-        # Send the image as a document to the chat
-        message.reply_document(document=open(name, "rb"))
+        # Set up Chrome options (headless mode)
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+
+        # Create a webdriver
+        driver = webdriver.Chrome(options=chrome_options)
+
+        try:
+            # Navigate to the webpage
+            driver.get(url)
+
+            # Adjust sleep time based on the webpage loading time
+            time.sleep(5)
+
+            # Capture screenshot
+            screenshot_path = "screenshot.png"
+            driver.save_screenshot(screenshot_path)
+
+            # Send the image as a document to the chat
+            message.reply_document(document=open(screenshot_path, "rb"))
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+            message.reply("Error capturing the webpage.")
+        finally:
+            # Close the browser
+            driver.quit()
     else:
         # Send an error message if the url is invalid
-        message.reply("Please provide a valid url.")
-	   
+        message.reply("Please provide a valid URL.")	   
 #WebSSEND
 #NewModuleStopBot
 def kill():

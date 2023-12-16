@@ -359,7 +359,7 @@ ADM = f"""**
 
 START = f"""**
 ────「 [{B_F_N}](https://graph.org//file/3650014818cd34600f408.jpg) 」────
-Hᴇʏ, User!!
+Hello, ?????soon
 I ᴀᴍ {B_NAME} I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [Pᴀᴛᴄʜ Uᴘᴅᴀᴛᴇ Dᴇᴛᴀɪʟs]
@@ -376,7 +376,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text=f"[► Add {B_NAME} In Your Group ◄]",
-            url=f"https://telegram.dog/Quantum004Bot?startgroup=true",
+            url=f"https://telegram.dog/{B_US}?startgroup=true",
         )
     ],
     [

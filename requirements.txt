@@ -8,3 +8,4 @@ youtube_search
 ffmpeg
 pyscreenshot
 pillow
+selenium

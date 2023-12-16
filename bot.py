@@ -359,8 +359,8 @@ ADM = f"""**
 
 START = f"""**
 ────「 [{B_F_N}]({ST_PIC}) 」────
-Hello,
-I am {B_NAME} I can Help You in Everything
+Hello, {U_F_N}
+I am {B_NAME} I can Help you in Everything
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [About Me]
 ➖➖➖➖➖➖➖➖➖➖

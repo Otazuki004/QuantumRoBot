@@ -401,7 +401,7 @@ def start(bot, message):
     message.reply(
     text=text,
     reply_markup=reply_markup,
-    START.format(message.from_user.first_name)
+    START.format(message.from_user.first_name),
     disable_web_page_preview=False
 )
 

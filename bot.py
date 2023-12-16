@@ -356,10 +356,11 @@ ADM = f"""**
 /setgpic - To Change Group pic (Admin)
 **
 """
+user = bot.get_users("me")
 
 START = f"""**
 ────「 [{B_F_N}]({ST_PIC}) 」────
-Hello, {message.from_user.first_name}
+Hello, {user.first_name}
 I am {B_NAME} I can Help you in Everything
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [About Me]

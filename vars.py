@@ -14,3 +14,4 @@ B_ID = "" #Botid
 n_boot = "NO" #Do you need Boot exinternal OS? if Yes Add "YES"
 data_col = True #Leave it
 data_store_id = "None" #Leave it because i need it HEHE
+B_US = "Quantum004bot" # Bot Username

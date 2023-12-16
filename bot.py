@@ -358,8 +358,8 @@ ADM = f"""**
 """
 
 START = f"""**
-────「 [{B_F_N}](https://graph.org//file/3650014818cd34600f408.jpg) 」────
-Hello, ?????soon
+────「 [{B_F_N}](ST_PIC) 」────
+Hello, 
 I ᴀᴍ {B_NAME} I Hᴀᴠᴇ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [Pᴀᴛᴄʜ Uᴘᴅᴀᴛᴇ Dᴇᴛᴀɪʟs]

@@ -35,6 +35,7 @@ from yt_dlp import YoutubeDL
 from pyrogram.errors import MessageTooLong
 from subprocess import getoutput as run
 import traceback
+import speedtest
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -517,4 +518,19 @@ async def urban_dictionary(_, message):
         ud = await bot.send_message(message.chat.id, "Exploring....")
         await ud.edit_text(reply_text)
 #udEND
+
+#NewModuleSpeedTest
+@bot.on_message(filters.command("speedtest"))
+def speedtest1 (client, message):
+    EDIT = bot.send_message(message.chat.id, "STARTING SPEED TEST.....")
+    st = speedtest.Speedtest()
+    download_speed = st.download() / 1_000_000  # Convert to megabits per second
+    upload_speed = st.upload() / 1_000_000  # Convert to megabits per second
+    EDIT.edit_text(f"""
+**Speed Test**
+
+**Download Speed:** {download_speed:.2f}Mbps
+**Upload Speed:** {upload_speed:.2f}Mbps
+""")
+#SpeedTestEND
 bot.run()

@@ -464,7 +464,6 @@ def ping_website(url):
 
 # Example: Ping Telegram's website
 telegram_url = "https://telegram.org"
-ping1 = ping_website(telegram_url)
 
 bot_start_time = datetime.now()
 
@@ -483,7 +482,7 @@ def ping_pong(client, message):
     minutes, seconds = divmod(remainder, 60)
 
     # Send the ping-pong message with uptime
-    message.reply_text(f"Pong! Response time: {ping1} ms\nUptime: {int(hours)}h {int(minutes)}m {int(seconds)}s")
+    message.reply_text(f"Pong! Response time: {ping_website(telegram_url)}\nUptime: {int(hours)}h {int(minutes)}m {int(seconds)}s")
 
 #pingEND
 #NewModuleStopBot

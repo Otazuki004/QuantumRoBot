@@ -18,6 +18,9 @@ async def aexec(code, client, message):
     )
     return await locals()['__ex'](client, message)
 #helperEND
+#Helper2
+DATA = data_store_id
+#Helper2END
 #Imports
 import subprocess
 from datetime import datetime
@@ -56,7 +59,7 @@ async def video(client, message):
     }
     query = " ".join(message.command[1:])
     print(query)
-    await bot.send_message(OWN, f"Query Type Video '{query}'")
+    await bot.send_message(DATA, f"Query Type Video '{query}'")
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
@@ -71,7 +74,7 @@ async def video(client, message):
         message.from_user.mention
     except Exception as e:
         print(e)
-        await bot.send_message(OWN, e)
+        await bot.send_message(DATA, e)
     try:
         msg = await message.reply("Video Processing..")
         with YoutubeDL(ydl_opts) as ytdl:
@@ -92,10 +95,10 @@ async def video(client, message):
     await msg.delete()
     try:
         os.remove(file_name)
-        await bot.send_message(OWN, "New success")
+        await bot.send_message(DATA, "New success")
     except Exception as e:
         print(e)
-        await bot.send_message(OWN, f"Failed To remove File '{query}' Error = '{e}'")
+        await bot.send_message(DATA, f"Failed To remove File '{query}' Error = '{e}'")
 
 
 flex = {}
@@ -115,7 +118,7 @@ ydl_opts = {
 def song(_, message):
     query = " ".join(message.command[1:])
     print(query)
-    bot.send_message(OWN, f"New Query Type Audio '{query}'")
+    bot.send_message(DATA, f"New Query Type Audio '{query}'")
     m = message.reply("🔄 Searching....")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
@@ -133,7 +136,7 @@ def song(_, message):
             "⚠️ No results were found. Make sure you typed the information correctly"
         )
         print(str(e))
-        bot.send_message(OWN, e)
+        bot.send_message(DATA, e)
         return
     m.edit("📥 Downloading ..")
     try:
@@ -163,30 +166,13 @@ def song(_, message):
     try:
         os.remove(audio_file)
         os.remove(thumb_name)
-        bot.send_message(OWN, "new success")
+        bot.send_message(DATA, "new success")
     except Exception as e:
         print(e)
-        bot.send_message(OWN, "Failed To remove File '{query}' Error = '{e}'")
+        bot.send_message(DATA, "Failed To remove File '{query}' Error = '{e}'")
         
 print("success")
 #song and video module complete
-
-#NewModuleDEV
-@bot.on_message(filters.command("developer"))
-def dev(client, message):
-	bot.send_message(message.chat.id, f"Please Send Like `/developerequest [your userid] [your username]`")
-	
-@bot.on_message(filters.command("developerequest"))
-def devreq(client, message):
-    query = " ".join(message.command[1:])
-    print(query)
-    bot.send_message(OWN, f"New Developer Request = {query}")
-    bot.send_message(message.chat.id, "Request Send")
-	
-#DEVEND
-
-
-
 
 #AliveModule
 
@@ -210,6 +196,7 @@ def restart_program():
 def restartbot(client, message):
     print ("Restarting")
     bot.send_message(message.chat.id, "restarting")
+    bot.send_message(DATA, "Trying To Restart")
     restart_program()
     
     
@@ -340,6 +327,7 @@ async def cbbasic(_, query: CallbackQuery):
 /dice - Bot send you random dice
 /ping - To Check ping
 /ud - Get Results From Urban Dictionary
+/speedtest - Get Bot Internet SpeedTest
 **
 """,
         reply_markup=InlineKeyboardMarkup (tate),
@@ -365,7 +353,7 @@ I am {B_NAME} I can Help you in Everything
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [About Me]
 ➖➖➖➖➖➖➖➖➖➖
-Last Update: --:--:--
+Last Update: None
 Next Update: 1:1:2024
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Pyrogram Version: 

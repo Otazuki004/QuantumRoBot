@@ -447,6 +447,24 @@ def start(bot, message):
 #AdminsEND
 
 #NewModuleping
+def ping_website(url):
+    try:
+        start_time = time.time()
+        response = requests.get(url)
+        end_time = time.time()
+
+        if response.status_code == 200:
+            response_time_ms = (end_time - start_time) * 1000
+            return f"{response_time_ms:.2f}ms"
+        else:
+            return f"Failed to ping {url}. Status code: {response.status_code}"
+
+    except requests.ConnectionError:
+        return f"Failed to connect to {url}"
+
+# Example: Ping Telegram's website
+telegram_url = "https://telegram.org"
+ping1 = ping_website(telegram_url)
 
 bot_start_time = datetime.now()
 
@@ -465,7 +483,7 @@ def ping_pong(client, message):
     minutes, seconds = divmod(remainder, 60)
 
     # Send the ping-pong message with uptime
-    message.reply_text(f"Pong! Response time: {ping_time:.2f} ms\nUptime: {int(hours)}h {int(minutes)}m {int(seconds)}s")
+    message.reply_text(f"Pong! Response time: {ping1} ms\nUptime: {int(hours)}h {int(minutes)}m {int(seconds)}s")
 
 #pingEND
 #NewModuleStopBot

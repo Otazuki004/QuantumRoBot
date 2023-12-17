@@ -7,7 +7,7 @@ from vars import *
 #addclients
 bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)
 UB = Client(
-    name=PyroGram,
+    name="UserBot",
     api_id=a_id,
     api_hash=a_hash,
     session_string=STRING_SESSION,

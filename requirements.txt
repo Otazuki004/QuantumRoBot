@@ -1,3 +1,4 @@
+speedtest-cli
 pyrogram
 wget
 yt_dlp

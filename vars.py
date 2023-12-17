@@ -12,8 +12,7 @@ B_F_N = "𝙌𝙪𝙖𝙣𝙩𝙪𝙢𝙍𝙤𝘽𝙤𝙩" #Bot Name in font
 S_URL = "FutureCity005" #Support Group url
 B_ID = "" #Botid
 n_boot = "NO" #Do you need Boot exinternal OS? if Yes Add "YES"
-data_col = True #Leave it
-data_store_id = "None" #Leave it because i need it HEHE
+data_store_id = "-1002075414845" #Add your Log group ID and Add the bot in that group 
 B_US = "Quantum004bot" # Bot Username
 
 #ImageSection

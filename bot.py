@@ -4,9 +4,15 @@ from pyrogram import Client
 #variables
 from vars import *
 #END
-#addbot
+#addclients
 bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)
-#botEND
+UB = Client(
+    name=PyroGram,
+    api_id=a_id,
+    api_hash=a_hash,
+    session_string=STRING_SESSION,
+)
+#clientsEND
 
 #helper
 import asyncio
@@ -522,3 +528,4 @@ def speedtest1 (client, message):
 """)
 #SpeedTestEND
 bot.run()
+UB.run()

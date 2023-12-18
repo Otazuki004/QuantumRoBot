@@ -7,4 +7,3 @@ from root import *
 def Alive_UB (UB, message):
     UB.send_message(message.chat.id, "I'm Alive")
 #UBEND
-UB.run()

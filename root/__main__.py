@@ -29,7 +29,7 @@ import traceback
 import speedtest
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from telethon import *
+from pyrogram import __version__ as Moye
 #MainCodesEND-------
 DATA = data_store_id
 #Codedown
@@ -351,7 +351,8 @@ I am {B_NAME} I can Help you in Everything
 Last Update: None
 Next Update: 1:1:2024
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Pyrogram Version: 
+Python Version: 
+Pyrogram Version: {Moye}
 {B_NAME} Version: 0.001
 Patch Name: Beta(Limited)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖

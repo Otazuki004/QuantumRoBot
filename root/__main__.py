@@ -29,7 +29,7 @@ import traceback
 import speedtest
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-
+from telethon import *
 #MainCodesEND-------
 DATA = data_store_id
 #Codedown

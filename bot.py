@@ -533,5 +533,5 @@ def speedtest1 (client, message):
 def Alive_UB (UB, message):
     UB.send_message(message.chat.id, "I'm Alive")
 bot.run()
-UB.run()
+UB.start()
 	

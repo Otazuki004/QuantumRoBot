@@ -3,9 +3,6 @@
 from pyrogram import Client
 
 #Simports
-from root.bot import *
-from root.UserBot import *
-from pyrogram import *
 from root import *
 #END
 

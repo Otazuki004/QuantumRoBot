@@ -529,7 +529,7 @@ def speedtest1 (client, message):
 #SpeedTestEND
 
 #UBModuleStart
-@UB.on_message(filters.regex(".alive")
+@UB.on_message(filters.regex(".alive"))
 def Alive_UB (UB, message):
     UB.send_message(message.chat.id, "I'm Alive")
 bot.run()

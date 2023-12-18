@@ -32,6 +32,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMa
 from pyrogram import __version__ as Moye
 #MainCodesEND-------
 DATA = data_store_id
+v = f"{sys.version_info.major}.{sys.version_info.minor}"
 #Codedown
 
 #NewModuleSongVideo↓
@@ -351,9 +352,9 @@ I am {B_NAME} I can Help you in Everything
 Last Update: None
 Next Update: 1:1:2024
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Python Version: 
+Python Version: {v}
 Pyrogram Version: {Moye}
-{B_NAME} Version: 0.001
+{B_NAME} Version: {ROOTVER}
 Patch Name: Beta(Limited)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 

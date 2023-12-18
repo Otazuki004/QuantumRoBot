@@ -518,5 +518,6 @@ def speedtest1 (client, message):
 #SpeedTestEND
 
 print("Starting Bot...")
-bot.run()
-print("Bot started successfully")
+if __name__ == "__main__":
+    bot.run()
+    print ("bot Started")

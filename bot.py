@@ -529,3 +529,6 @@ def speedtest1 (client, message):
 #SpeedTestEND
 bot.run()
 UB.run()
+with UB:
+	UB.send_message(DATA, "ub started")
+	

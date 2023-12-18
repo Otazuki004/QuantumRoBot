@@ -182,7 +182,6 @@ def Alive(client, message):
 def restart_program():
     python = sys.executable
     os.execl(python, python, *sys.argv)
-    exit()
 
 @bot.on_message(filters.command("restart") & filters.user(OWN))
 def restartbot(client, message):

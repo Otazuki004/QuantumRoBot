@@ -181,7 +181,8 @@ def Alive(client, message):
 #RestartProgramModule
 def restart_program():
     python = sys.executable
-    os.execl(python, python, *sys.argv)
+    script = os.path.abspath(sys.argv[0])
+    os.execl(python, python, script, *sys.argv[1:])
 
 @bot.on_message(filters.command("restart") & filters.user(OWN))
 def restartbot(client, message):

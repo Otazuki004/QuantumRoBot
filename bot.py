@@ -487,7 +487,7 @@ def kill():
 @bot.on_message(filters.regex("/stop") & filters.user(OWN))
 def killbot(client, message):
     print ("Force Stoping bot..")
-    bot.send_message(message.chat.id, "success")
+    bot.send_message(message.chat.id, "Force Stoping Bot")
     kill()
 #StopBotEND
 

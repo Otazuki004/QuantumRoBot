@@ -18,7 +18,7 @@ B_ID = "" #Botid
 n_boot = "NO" #Do you need Boot exinternal OS? if Yes Add "YES"
 data_store_id = "-1002075414845" #Add your Log group ID and Add the bot in that group 
 B_US = "Quantum004bot" # Bot Username
-
+PRE = [".","/","$","+"]
 #ImageSection
 ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Picture
 

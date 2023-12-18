@@ -1,6 +1,6 @@
 from pyrogram import *
 from root.bot import *
-from vars import *
+from root import *
 
 #UBModuleStart
 @UB.on_message(filters.regex(".alive"))

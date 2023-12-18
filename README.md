@@ -25,21 +25,21 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 ## Installation
 
 - ### Linux Environment
-1. Clone the repository: `git clone https://github.com/Otazuki004/QuantumRoBot.git`
-2. Navigate to the project directory: `cd QuantumRoBot
-3. Add your vars in `vars.py`
+1. Fork The Repository And Run `git clone "Your Repo Link Here"`
+2. Navigate to the project directory: `cd "Your Repository Name Here"`
+3. Add your vars in root/`__init__.py`
 4. Run This Command `pkg install libjpeg-turbo` if error Run This `apt install libjpeg-turbo` else Ask in Support or DM me [Otazuki](https://t.me/Otazuki/) 
 5. Install required packages: `pip install -U -r requirements.txt`
 6. Run the bot using the following command:
-```python3 -m bot```
+```python3 -m root```
 
 - ### Heroku Installation
 
-- ##### Fork The Repository Edit Variables In `vars.py` And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
+- ##### Fork The Repository Edit Variables In root/`__init__.py` And Go to Heroku Create App And Deploy it and Check logs if No errors You get success!
 
 - ### IDE Installation
 
-- ##### Download The Repository and Edit Variables In `vars.py` And use `cd QuantumRoBot` Must be unzip And `python3 -m bot` if Got Error Or Something else Ask in Support And Give Issue in Github
+- ##### Download The Repository and Edit Variables In root/`__init__.py` And use `cd QuantumRoBot` Must be unzip And `python3 -m root` if Got Error Or Something else Ask in Support And Give Issue in Github
 
 ## About
 

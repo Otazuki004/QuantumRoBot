@@ -23,13 +23,13 @@ PRE = [".","/","$","+"]
 ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Picture
 
 #addclients
-bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/Module"))
+bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/Modules"))
 UB = Client(
     name="UserBot",
     api_id=a_id,
     api_hash=a_hash,
     session_string=STRING_SESSION,
-    plugins=dict(root="root/Module/UserBot")
+    plugins=dict(root="root/Modules/UserBot")
 )
 #clientsEND
 

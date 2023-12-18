@@ -520,11 +520,6 @@ def speedtest1 (client, message):
 """)
 #SpeedTestEND
 
-bot.run()
-
-
 print("Starting Bot...")
 bot.run()
-print("Starting UserBot")
-UB.run()
-print('All client started')
+print("Bot started successfully")

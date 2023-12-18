@@ -4,15 +4,6 @@ from pyrogram import Client
 #variables
 from root import *
 #END
-#addclients
-bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)
-UB = Client(
-    name="UserBot",
-    api_id=a_id,
-    api_hash=a_hash,
-    session_string=STRING_SESSION,
-)
-#clientsEND
 
 #helper
 import asyncio

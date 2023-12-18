@@ -1,3 +1,15 @@
+from pyrogram import *
+
+#addclients
+bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)
+UB = Client(
+    name="UserBot",
+    api_id=a_id,
+    api_hash=a_hash,
+    session_string=STRING_SESSION,
+)
+#clientsEND
+
 a_id = "10187126" # Your Api Id
 a_hash = "ff197c0d23d7fe54c89b44ed092c1752" # Your Api Hash 
 b_tok = "6910428877:AAFIFbleAgAtf42tNQuty-gRbl4ybWIIPCQ" # Your Bot Token

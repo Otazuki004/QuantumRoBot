@@ -2,7 +2,7 @@
 from pyrogram import Client
 
 #variables
-from vars import *
+from root import *
 #END
 #addclients
 bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)

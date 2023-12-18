@@ -18,7 +18,7 @@ import sys
 import requests
 import wget
 import random
-from root import *
+from root.__init__ import *
 import yt_dlp
 from pyrogram import filters, enums
 from youtube_search import YoutubeSearch

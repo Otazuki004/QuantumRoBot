@@ -113,7 +113,7 @@ def song(_, message):
     query = " ".join(message.command[1:])
     print(query)
     try:
-        await bot.send_message(DATA, f"New song Query '{query}'")
+        bot.send_message(DATA, f"New song Query '{query}'")
     except Exception as e:
         print(e)
     m = message.reply("🔄 Searching....")
@@ -192,7 +192,7 @@ def restartbot(client, message):
     print ("Restarting")
     bot.send_message(message.chat.id, "Restaring Bot")
     try:
-        await bot.send_message(DATA, f"Trying To Restart")
+        bot.send_message(DATA, f"Trying To Restart")
     except Exception as e:
         print(e)
     restart_program()

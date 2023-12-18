@@ -24,12 +24,5 @@ ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Pi
 
 #addclients
 bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/Modules"))
-UB = Client(
-    name="UserBot",
-    api_id=a_id,
-    api_hash=a_hash,
-    session_string=STRING_SESSION,
-    plugins=dict(root="root/Modules/UserBot")
-)
 #clientsEND
 

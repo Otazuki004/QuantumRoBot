@@ -1,11 +1,3 @@
-
-#Main Codes
-from pyrogram import Client
-
-#Simports
-from root import *
-#END
-
 #helper
 import asyncio
 
@@ -29,6 +21,7 @@ import sys
 import requests
 import wget
 import random
+from root import *
 import yt_dlp
 from pyrogram import filters, enums
 from youtube_search import YoutubeSearch
@@ -57,7 +50,10 @@ async def video(client, message):
     }
     query = " ".join(message.command[1:])
     print(query)
-    await bot.send_message(DATA, f"Query Type Video '{query}'")
+    try:
+        await bot.send_message(DATA, f"New Video Query '{query}'")
+    except Exception as e:
+        print(e)
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
@@ -116,7 +112,10 @@ ydl_opts = {
 def song(_, message):
     query = " ".join(message.command[1:])
     print(query)
-    bot.send_message(DATA, f"New Query Type Audio '{query}'")
+    try:
+        await bot.send_message(DATA, f"New song Query '{query}'")
+    except Exception as e:
+        print(e)
     m = message.reply("🔄 Searching....")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
@@ -169,15 +168,13 @@ def song(_, message):
         print(e)
         bot.send_message(DATA, "Failed To remove File '{query}' Error = '{e}'")
         
-print("success")
 #song and video module complete
 
 #AliveModule
 
 @bot.on_message(filters.command("alive"))
 def Alive(client, message):
-	print("hm")
-	bot.send_message(message.chat.id, "Alive")
+    bot.send_message(message.chat.id, "Alive")
 	
 #AliveModuleEND
 
@@ -193,8 +190,11 @@ def restart_program():
 @bot.on_message(filters.command("restart") & filters.user(OWN))
 def restartbot(client, message):
     print ("Restarting")
-    bot.send_message(message.chat.id, "restarting")
-    bot.send_message(DATA, "Trying To Restart")
+    bot.send_message(message.chat.id, "Restaring Bot")
+    try:
+        await bot.send_message(DATA, f"Trying To Restart")
+    except Exception as e:
+        print(e)
     restart_program()
     
     

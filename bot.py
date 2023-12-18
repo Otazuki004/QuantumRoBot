@@ -527,8 +527,11 @@ def speedtest1 (client, message):
 **Upload Speed:** {upload_speed:.2f}Mbps
 """)
 #SpeedTestEND
+
+#UBModuleStart
+@UB.on_message(filters.regex(".alive")
+def Alive_UB (UB, message):
+    UB.send_message(message.chat.id, "I'm Alive")
 bot.run()
 UB.run()
-with UB:
-	UB.send_message(DATA, "ub started")
 	

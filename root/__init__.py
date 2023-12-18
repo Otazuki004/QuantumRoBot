@@ -1,14 +1,5 @@
 from pyrogram import *
 
-#addclients
-bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)
-UB = Client(
-    name="UserBot",
-    api_id=a_id,
-    api_hash=a_hash,
-    session_string=STRING_SESSION,
-)
-#clientsEND
 
 a_id = "10187126" # Your Api Id
 a_hash = "ff197c0d23d7fe54c89b44ed092c1752" # Your Api Hash 
@@ -30,3 +21,14 @@ B_US = "Quantum004bot" # Bot Username
 
 #ImageSection
 ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Picture
+
+#addclients
+bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash)
+UB = Client(
+    name="UserBot",
+    api_id=a_id,
+    api_hash=a_hash,
+    session_string=STRING_SESSION,
+)
+#clientsEND
+

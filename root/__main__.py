@@ -8,9 +8,6 @@ async def aexec(code, client, message):
     )
     return await locals()['__ex'](client, message)
 #helperEND
-#Helper2
-DATA = data_store_id
-#Helper2END
 #Imports
 import subprocess
 from datetime import datetime
@@ -34,7 +31,7 @@ from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 #MainCodesEND-------
-
+DATA = data_store_id
 #Codedown
 
 #NewModuleSongVideo↓

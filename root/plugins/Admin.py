@@ -170,9 +170,10 @@ async def delete(_, m):
          elif user_stats.privileges.can_delete_messages:
              await reply.delete()
              await m.delete()
-     except Chat_id as e:
+     except Exception as e:
          reply1 = m.reply_to_message
          await reply1.delete()
+         raise exception (e)
          
                      
 @bot.on_message(filters.command(["setgtitle","setchattitle"]))

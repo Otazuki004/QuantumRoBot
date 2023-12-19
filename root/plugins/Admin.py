@@ -1,5 +1,6 @@
 from pyrogram import filters, enums
-from root import bot
+from root import *
+from root.__main__ import *
 from pyrogram.types import *
 import os, io, time
 

@@ -150,25 +150,30 @@ async def demoting(_, query):
         
 @bot.on_message(filters.command("del"))
 async def delete(_, m):
-     reply = m.reply_to_message
-     chat = m.chat
-     user = m.from_user
-     user_stats = await bot.get_chat_member(chat.id, user.id)
-     bot_stats = await bot.get_chat_member(chat.id, "self")
-     if not bot_stats.privileges:
-           return await m.reply_text("Make Me Admin!")
-     elif not user_stats.privileges:
-            return await m.reply_text("Only Admins are allowed to use this command!")    
-     elif not reply:
+     try:
+         reply = m.reply_to_message
+         chat = m.chat
+         user = m.from_user
+         user_stats = await bot.get_chat_member(chat.id, user.id)
+         bot_stats = await bot.get_chat_member(chat.id, "self")
+         if not bot_stats.privileges:
+             return await m.reply_text("Make Me Admin!")
+         elif not user_stats.privileges:
+            return await m.reply_text("Only Admins are allowed to use this command!")
+            
+         elif not reply:
             return  await m.reply_text("reply to message for deleting")
-     elif not bot_stats.privileges.can_delete_messages:
+         elif not bot_stats.privileges.can_delete_messages:
               return await m.reply_text("**I'm missing the permission of**:\n`can_delete_messages`")
-     elif not user_stats.privileges.can_delete_messages:
+         elif not user_stats.privileges.can_delete_messages:
               return await m.reply_text("**your are missing the permission of**:\n`can_delete_messages`")
-     elif user_stats.privileges.can_delete_messages:
-               await reply.delete()
-               await m.delete()
-               
+         elif user_stats.privileges.can_delete_messages:
+             await reply.delete()
+             await m.delete()
+     except Chat_id as e:
+         reply1 = m.reply_to_message
+         await reply1.delete()
+         
                      
 @bot.on_message(filters.command(["setgtitle","setchattitle"]))
 async def setgrouptitle(_, m):

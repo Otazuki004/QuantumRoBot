@@ -407,10 +407,22 @@ async def cbbasic(_, query: CallbackQuery):
 STA1= f"""**
 ── {B_F_N} ──
 
-۞ I'ᴍ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ Pᴏᴡᴇʀғᴜʟ Bᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™
-.
-۞ I'ᴍ Aʟᴡᴀʏs Wᴏʀᴋ & Uʟᴛʀᴀ Sᴘᴇᴇᴅ & Hᴇʟᴘ Tᴏ ᴍᴀɴɢᴇ Yᴏᴜʀ ɢʀᴏᴜᴘ ♡
-۞ Usᴇ ᴍᴇ ᴛᴏ Kɴᴏᴡ Wʜᴀᴛ ɪs Mᴀɢɪᴄ!
+‣ I can Download Songs and Videos From YouTube
+‣ I can Generate Fonts from your Query
+‣ I can Help You to manage Your Groups
+‣ I can Give Simple Bet Game
+‣ I'm Always Work
+‣ New Update Within 5 Weeks
+‣ Support Group Available
+‣ Public Repo
+‣ Anyone Can Ask Question To My Owner
+‣ User-friendly
+‣ Create Your Own QuantumRobot
+‣ Festival Based Themes
+‣ No Errors
+‣ No Bugs
+
+۞ Powered By 𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™ ۞**
 """
 PIC = (
  "https://telegra.ph/file/c4b5257049c672290306e.jpg", "https://telegra.ph/file/4135682365c0754618cf5.jpg", "https://telegra.ph/file/1dcfff90307b6f45de00e.jpg"

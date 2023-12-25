@@ -411,16 +411,11 @@ STA1= f"""**
 ‣ I can Generate Fonts from your Query
 ‣ I can Help You to manage Your Groups
 ‣ I can Give Simple Bet Game
-‣ I'm Always Work
 ‣ New Update Within 5 Weeks
 ‣ Support Group Available
-‣ Public Repo
-‣ Anyone Can Ask Question To My Owner
+‣ Public Repo Available
 ‣ User-friendly
-‣ Create Your Own QuantumRobot
 ‣ Festival Based Themes
-‣ No Errors
-‣ No Bugs
 
 ۞ Powered By 𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™ ۞**
 """

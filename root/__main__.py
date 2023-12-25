@@ -420,7 +420,7 @@ STA1= f"""**
 ۞ Powered By 𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™ ۞**
 """
 PIC = (
- "https://telegra.ph/file/c4b5257049c672290306e.jpg", "https://telegra.ph/file/4135682365c0754618cf5.jpg", "https://telegra.ph/file/1dcfff90307b6f45de00e.jpg"
+ f"{ST_PIC}", f"{ST_PIC}"
 
 )
 

@@ -9,28 +9,28 @@ async def id(_, m):
     reply = m.reply_to_message
     _reply = ""
     if not reply:
-        no_reply = f"Your Id: {m.from_user.id}\n"
-        no_reply += f"Chat ID: {m.chat.id}\n"
-        no_reply += f"Message Id: {m.id}"
+        no_reply = f"Yᴏᴜʀ ɪᴅ: {m.from_user.id}\n"
+        no_reply += f"Tʜɪs ᴄʜᴀᴛ ɪᴅ: {m.chat.id}\n"
+        no_reply += f"Mᴇssᴀɢᴇ ɪᴅ: {m.id}"
         await m.reply_text(text=(no_reply))
     if reply.from_user:
-        _reply += f"Your Id: {m.from_user.id}\n"
-        _reply += f"Replied User Id: {reply.from_user.id}\n"
-        _reply += f"Chat ID: {m.chat.id}\n\n"
-        _reply += f"Replied Message Id: {reply.id}\n"
+        _reply += f"Yᴏᴜʀ ɪᴅ: {m.from_user.id}\n"
+        _reply += f"Rᴇᴘʟɪᴇᴅ Usᴇʀ ɪᴅ: {reply.from_user.id}\n"
+        _reply += f"Tʜɪs Cʜᴀᴛ ɪᴅ: {m.chat.id}\n\n"
+        _reply += f"ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ ɪᴅ: {reply.id}\n"
     if reply.sender_chat:
-        _reply += f"Channel Id: {reply.sender_chat.id}\n"
+        _reply += f"Cʜᴀɴɴᴇʟ  ɪᴅ: {reply.sender_chat.id}\n"
     if reply.sticker:
-        _reply += f"Sticker Id: {reply.sticker.file_id}"
+        _reply += f"Sᴛɪᴄᴋᴇʀ ɪᴅ: {reply.sticker.file_id}"
     elif reply.animation:
-        _reply += f"Animation Id: {reply.animation.file_id}"
+        _reply += f"Aɴɪᴍᴀᴛɪᴏɴ ɪᴅ: {reply.animation.file_id}"
     elif reply.document:
-        _reply += f"Document Id: {reply.document.file_id}"
+        _reply += f"Dᴏᴄᴜᴍᴇɴᴛ ɪᴅ: {reply.document.file_id}"
     elif reply.audio:
-        _reply += f"Audio Id: {reply.audio.file_id}"
+        _reply += f"Aᴜᴅɪᴏ ɪᴅ: {reply.audio.file_id}"
     elif reply.video:
-        _reply += f"Video Id: {reply.video.file_id}"
+        _reply += f"Vɪᴅᴇᴏ ɪᴅ: {reply.video.file_id}"
     elif reply.photo:
-        _reply += f"Photo Id: {reply.photo.file_id}"
+        _reply += f"Pʜᴏᴛᴏ ɪᴅ: {reply.photo.file_id}"    
     await reply.reply_text(_reply)
     await m.delete()

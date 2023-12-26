@@ -56,35 +56,8 @@ async def unban(_, message):
 
 @bot.on_message(filters.command("demote"))
 async def demotes(_, message):
-   try:
-       if not message.reply_to_message:
-             return await message.reply("Reply to Someone")
-       chat_id = message.chat.id
-       admin = message.from_user
-       user = message.reply_to_message.from_user
-       check = await bot.get_chat_member(chat_id, admin.id)
-       if check.privileges.can_promote_members:
-            msg = await message.reply("Demoting...")
-            await message.chat.promote_member(
-               user_id=user.id,
-               privileges=pyrogram.types.ChatPrivileges(
-               can_change_info=False,
-               can_invite_users=False,
-               can_delete_messages=False,
-               can_restrict_members=False,
-               can_pin_messages=False,
-               can_promote_members=False,
-               can_manage_chat=False,
-               can_manage_video_chats=False    
-))
-            await msg.edit(f"""**Demoted by Admin**:\n**{admin.mention}**
-**Demoted User:** **{user.mention}**""")
-   except Exception as errors:
-           await message.reply(f"**Error**: {errors}")
-       
-
-      
-      
+   await bot.send_message(message.chat.id, "Unfortunately, bots are unable to demote users due to restrictions imposed by Telegram.")
+                   
 @bot.on_message(filters.command("promote"))
 async def promoting(_, message):
      global new_admin

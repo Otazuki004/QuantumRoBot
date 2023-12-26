@@ -9,9 +9,9 @@ help = f"""**
 **
 """
 
-@Client.on_message(filters.command("help"))
+@bot.on_message(filters.command("help"))
 def start(bot, message):
- Client.send_message(chat_id=message.chat.id, text=help, reply_markup=InlineKeyboardMarkup(
+ bot.send_message(message.chat.id, help, reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Continue ✅", callback_data="help")]]
         ),
                     )

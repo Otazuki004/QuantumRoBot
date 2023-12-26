@@ -1,5 +1,6 @@
 import os
-from root import bot
+from root import *
+from root.__main__ import *
 from pyrogram import filters, Client
 from telegraph import upload_file
 

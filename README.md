@@ -50,9 +50,8 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 - #### New Update Within 5 Weeks
 - #### Old Versions Not be supported
 - #### Local Deployment Tested OK
-- #### Versions Download: N/A
 - #### Last Patch: None
-- #### Next Patch: 15:1:2024 (Release)
+- #### Next Patch: 1:1:2024 (Release)
 
 ## Support
 
@@ -71,30 +70,16 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 - #### Pyroid-MobilePythonIDE [Tested OK]
 - #### Heroku [Not Tested ❌❌]
 
-## Terms and Privacy
+## Data Collection
 
-### Privacy Policy
+- ##### We Maybe Collect Users Data For Improvements
+- ##### Your Data's Never Given To Third-party
+- ##### Your Data's Never Be Misused
+- ##### Only Accessed Person Can Take Your Data
 
-We take your privacy seriously. By using QuantumRoBot (formerly HyperSpeed), owned by Otazuki, you acknowledge and agree to the following:
+### What Data We Collect?
 
-- **Data Collection:** We may collect data for the purpose of improving the bot. This data may include user interactions, usage patterns, and feedback. It may be shared with trusted third parties, and we assure you that your data will not be misused.
-
-- **Trusted Third Parties:** We may collaborate with trusted third-party services to enhance the bot's functionality. These partnerships adhere to strict privacy standards, ensuring the security of your information.
-
-- **Security:** We employ industry-standard measures to safeguard your data against unauthorized access or misuse.
-
-### Terms of Service
-
-By using QuantumRoBot, owned by Otazuki, you agree to the following terms:
-
-- **Content Usage:** Do not use this bot for any illicit activities, including but not limited to uploading or renaming copyrighted materials. The bot may provide misleading or incorrect information, and it does not guarantee the accuracy of its responses.
-
-- **Acceptance:** By using the bot or recreating it, you accept both the terms of service and privacy policy outlined above.
-
-- **Responsibility:** Use the bot responsibly and do not misuse it for harmful or malicious purposes.
-
-- **Updates:** These terms and policies may be updated, and it is your responsibility to stay informed about any changes.
-
-- **Communication:** If you misuse the bot or violate the terms, we reserve the right to cease communication and support.
-
-If you have any concerns or questions regarding our terms and privacy policy, please contact us through the provided channels.
+- ##### We Collect Your Chat Data
+- ##### We Never Collect Your Photos and Videos
+- ##### Only We Take Your text Chats Only
+- ##### We Just Use That Data For Improvements

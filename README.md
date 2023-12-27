@@ -43,15 +43,15 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 
 ## About
 
-- #### Version: 0.01 (Beta)
+- #### Version: 1.0.0 (Version 1)
 - #### Minimum Pyrogram Version 2+
 - #### Required All Packages Versions are be latest
 - #### Support Group Available
 - #### New Update Within 5 Weeks
 - #### Old Versions Not be supported
 - #### Local Deployment Tested OK
-- #### Last Patch: None
-- #### Next Patch: 1:1:2024 (Release)
+- #### Last Patch: 1:1:2024
+- #### Next Patch: 15:2:2024 (Version 2)
 
 ## Support
 

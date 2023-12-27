@@ -349,8 +349,8 @@ I am {B_NAME} I can Help you in Everything
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 [About Me]
 ➖➖➖➖➖➖➖➖➖➖
-Last Update: None
-Next Update: 1:1:2024
+Last Update: 01.01.2024
+Next Update: 15:2:2024 (Version 2)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Python Version: {v}
 Pyrogram Version: {Moye}

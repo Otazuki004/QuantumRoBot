@@ -10,7 +10,10 @@ bad_words = [
     "MadanGowri", "AdamGaming", "Ff", "Mr"
 ]
 
-@bot.on_message(filters.text & filters.regex(fr"\b(?:{'|'.join(map(re.escape, bad_words))})\b", re.IGNORECASE))
+# Build a regex pattern with variations
+pattern = fr"\b(?:{'|'.join(f'{re.escape(word)}(?:\w+)?' for word in bad_words)})\b"
+
+@bot.on_message(filters.text & filters.regex(pattern, re.IGNORECASE))
 async def remove_message(_, message):
     try:
         await message.delete()

@@ -1,5 +1,6 @@
 from pyrogram import filters
 from root.__main__ import bot
+import re 
 
 @bot.on_message(filters.text & filters.regex(r"\bpunda\b", re.IGNORECASE))
 async def remove_message(_, message):

@@ -11,7 +11,7 @@ async def take_ss(_, message):
         url = message.text.split(None, 1)[1]
         try:
             if url.startswith("https://"):
-                await message.reply_text("» Usᴀɢᴇ /ᴡᴇʙss ᴡᴡᴡ.(ᴅᴏᴍᴀɪɴɴᴀᴍᴇ).(ᴅᴏᴍᴀɪɴ)")
+                await message.reply_text("» Usᴀɢᴇ /webss ᴡᴡᴡ.(Website Name).(domain)")
             elif url.startswith("www"):
                     m = await message.reply_text("» ᴛʀʏɪɴɢ ᴛᴏ ᴛᴀᴋᴇ sᴄʀᴇᴇɴsʜᴏᴛ...")
                     await m.edit("» ᴜᴩʟᴏᴀᴅɪɴɢ ᴄᴀᴩᴛᴜʀᴇᴅ sᴄʀᴇᴇɴsʜᴏᴛ...")
@@ -19,6 +19,7 @@ async def take_ss(_, message):
                         await message.reply_photo(
                         photo=f"https://webshot.amanoteam.com/print?q={url}",
                         quote=False)
+                        await m.delete()
                     except TypeError:
                         return await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
                         await m.delete()
@@ -26,7 +27,7 @@ async def take_ss(_, message):
                         await message.reply_text(str(e))
         
             else:
-                await message.reply_text("» Usᴀɢᴇ /ᴡᴇʙss ᴡᴡᴡ.(ᴅᴏᴍᴀɪɴɴᴀᴍᴇ).(ᴅᴏᴍᴀɪɴ)")
+                await message.reply_text("» Usᴀɢᴇ /webss ᴡᴡᴡ.(Website Name).(domain)")
         except Exception as e:
             print(f"Error: {e}")
             await message.reply_text(f"Eʀʀᴏʀ: ", e)

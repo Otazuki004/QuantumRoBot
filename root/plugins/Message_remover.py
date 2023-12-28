@@ -14,7 +14,7 @@ bad_words = [
     "sethapunda", "Othapunda", "Enadapunda", "Sexy", "ifuckit", "pornhub", "xhamster.desi", "pornhub.com", 
     "SavuleMairupunda", "OmalaPunda", "Kunjipunda", "pundaaaaaaaaaaaaaaa", "Othaaaa", "Othaaa", "Othaa", "Ommalaa", 
     "porn", "girlnodress", "motherfuckergirls", "gay", "lesbian", "promf", "ultrasex", 
-    
+    "desi", 
 ]
 
 # Build a regex pattern with variations

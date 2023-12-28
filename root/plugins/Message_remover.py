@@ -15,7 +15,7 @@ bad_words = [
 ]
 
 # Build a regex pattern with variations
-pattern = r"\b(?:{})\b".format('|'.join(f'{}(?:{})?'.format(re.escape(word), '[a-zA-Z]*' * (len(word)-1)) for word in bad_words))
+pattern = r"\b(?:{})\b".format('|'.join(['{}(?:{})?'.format(re.escape(word), '[a-zA-Z]*' * (len(word)-1)) for word in bad_words]))
 
 @bot.on_message(filters.text & filters.regex(pattern, re.IGNORECASE))
 async def remove_message(_, message):

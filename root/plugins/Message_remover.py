@@ -4,4 +4,8 @@ from root import *
 
 @bot.on_message(filters.regex("punda"))
 async def remove_message(client, message):
-    await message.delete()
+    try:
+        await message.delete()
+    except Exception as e:
+        print(e)
+        await bot.send_message("Error", e)

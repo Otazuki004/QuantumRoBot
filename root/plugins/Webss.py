@@ -30,3 +30,5 @@ async def take_ss(_, message):
         except Exception as e:
             print(f"Error: {e}")
             await message.reply_text(f"Eʀʀᴏʀ: ", e)
+        finally:
+            print("Finally block executed.")

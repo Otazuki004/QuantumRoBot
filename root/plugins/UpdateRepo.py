@@ -5,7 +5,7 @@ import subprocess
 
 @bot.on_message(filters.command("update") & filters.user(OWN))
 async def updaterepo(_, message):
-    await message.reply_text("`Updating Repo..`")
+    await message.reply_text("`Updating your bot..`")
     try:
         command = "cd && rm -rf QuantumRoBot && git clone https://GitHub.com/Otazuki004/QuantumRoBot.git && cd QuantumRoBot && ls && python3 -m root"
         result = subprocess.run(command, shell=True, capture_output=True, text=True)

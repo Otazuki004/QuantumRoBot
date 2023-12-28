@@ -302,6 +302,7 @@ async def cbbasic(_, query: CallbackQuery):
 /restart - Restart The While Bot (Owner Only)
 /sh - To Run Shell Codes
 /stop - To Stop The Bot (Owner Only)
+/update - Update The Bot To newer Version (Owner Only)
 **
 """,
         reply_markup=InlineKeyboardMarkup(

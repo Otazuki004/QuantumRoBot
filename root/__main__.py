@@ -356,7 +356,7 @@ Next Update: 15:2:2024 (Version 2)
 Python Version: {v}
 Pyrogram Version: {Moye}
 {B_NAME} Version: {ROOTVER}
-Patch Name: Beta(Limited)
+Patch Name: Quantum-Creation (Release)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 Try To Touch Help Button To Know My Powers⚡**

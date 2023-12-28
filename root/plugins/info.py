@@ -1,7 +1,7 @@
 from pyrogram import filters
 from root import prefix as HANDLER
 from root import OWN as OWNER_ID
-from root import bot
+from root.__main__ import bot
 from pyrogram import *
 
 @bot.on_message(filters.command("cinfo", prefixes=HANDLER) & filters.user(OWNER_ID))

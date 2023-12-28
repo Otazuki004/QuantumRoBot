@@ -1,6 +1,6 @@
 from pyrogram import *
 from root.__main__ import *
-from root import *
+from root import OWN
 import subprocess
 
 @bot.on_message(filters.command("update") & filters.user(OWN))

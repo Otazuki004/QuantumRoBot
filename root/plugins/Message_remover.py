@@ -12,10 +12,10 @@ bad_words = [
     "bitch", "Kunjaa", "Kanja", "bothaiporul", "KenaPunda", "MairuPunda", "Omalaoli",
     "sethapunda", "Othapunda", "Enadapunda", "Sexy", "ifuckit", "pornhub", "xhamster.desi", "pornhub.com", 
     "SavuleMairupunda", "OmalaPunda", "Kunjipunda", "pundaaaaaaaaaaaaaaa", "Othaaaa", "Othaaa", "Othaa", "Ommalaa",
-] #My brain Cant think more than this if i miss anything please dm me t.me/Otazuki004/
+]
 
 # Build a regex pattern with variations
-pattern = r"\b(?:{}(?:[a-zA-Z]*)?)\b".format('|'.join(map(re.escape, bad_words)))
+pattern = r"\b(?:{})\b".format('|'.join(f'{}(?:{"".join(["{}?".format(c) for c in word])})?'.format(re.escape(word)) for word in bad_words))
 
 @bot.on_message(filters.text & filters.regex(pattern, re.IGNORECASE))
 async def remove_message(_, message):

@@ -23,7 +23,7 @@ async def take_ss(_, message):
                         return await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
                         await m.delete()
                     except Exception as e:
-                    await message.reply_text(str(e))
+                        await message.reply_text(str(e))
         
             else:
                 await message.reply_text("» Usᴀɢᴇ /ᴡᴇʙss ᴡᴡᴡ.(ᴅᴏᴍᴀɪɴɴᴀᴍᴇ).(ᴅᴏᴍᴀɪɴ)")

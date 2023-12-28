@@ -7,8 +7,12 @@ bad_words = [
     "fuck", "Kena", "Mairu", "Sex", "Girlfriendsex", "Mf", "Tf", "Wtf", "Ass", 
     "Boobs", "Kunji", "Punda", "Otha", "Umbu", "Coolip", "Drugs", "Saaraku", 
     "Ponnupunda", "Motherfucker", "Fucker", "Fuckers", "Pundaboys", "Sunni", 
-    "MadanGowri", "AdamGaming", "Ff", "Mr"
-]
+    "MadanGowri", "AdamGaming", "Ff", "Mr", "Pundaaaa", "Omalaa", "Ombuu", "Ombu", 
+    "Savu", "Podapunda", "Kenaaa", "cum", "creampie", "Pea", "Fuckit", "Just die",
+    "bitch", "Kunjaa", "Kanja", "bothaiporul", "KenaPunda", "MairuPunda", "Omalaoli",
+    "sethapunda", "Othapunda", "Enadapunda", "Sexy", "ifuckit", "pornhub", "xhamster.desi", "pornhub.com", 
+    "SavuleMairupunda", "OmalaPunda", "Kunjipunda", "pundaaaaaaaaaaaaaaa", "Othaaaa", "Othaaa", "Othaa", "Ommalaa",
+] #My brain Cant think more than this if i miss anything please dm me t.me/Otazuki004/
 
 # Build a regex pattern with variations
 pattern = r"\b(?:{}(?:[a-zA-Z]*)?)\b".format('|'.join(map(re.escape, bad_words)))

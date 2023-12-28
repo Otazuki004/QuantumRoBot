@@ -9,6 +9,16 @@ async def take_ss(_, message):
         if len(message.command) != 2:
             return await message.reply_text("» ɢɪᴠᴇ ᴀ ᴜʀʟ ᴛᴏ ғᴇᴛᴄʜ sᴄʀᴇᴇɴsʜᴏᴛ...")
         url = message.text.split(None, 1)[1]
+        try:
+            if url.startswith("https://"):
+                await message.reply_text("» Usᴀɢᴇ /ᴡᴇʙss ᴡᴡᴡ.(ᴅᴏᴍᴀɪɴɴᴀᴍᴇ).(ᴅᴏᴍᴀɪɴ)")
+            elif url.startswith("www"):
+                print(None)
+            else:
+                await message.reply_text("» Usᴀɢᴇ /ᴡᴇʙss ᴡᴡᴡ.(ᴅᴏᴍᴀɪɴɴᴀᴍᴇ).(ᴅᴏᴍᴀɪɴ)")
+        except Exception as e:
+            await message.reply_text("Eʀʀᴏʀ: ", e)
+            
         m = await message.reply_text("» ᴛʀʏɪɴɢ ᴛᴏ ᴛᴀᴋᴇ sᴄʀᴇᴇɴsʜᴏᴛ...")
         await m.edit("» ᴜᴩʟᴏᴀᴅɪɴɢ ᴄᴀᴩᴛᴜʀᴇᴅ sᴄʀᴇᴇɴsʜᴏᴛ...")
         try:

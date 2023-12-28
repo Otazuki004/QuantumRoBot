@@ -28,4 +28,5 @@ async def take_ss(_, message):
             else:
                 await message.reply_text("» Usᴀɢᴇ /ᴡᴇʙss ᴡᴡᴡ.(ᴅᴏᴍᴀɪɴɴᴀᴍᴇ).(ᴅᴏᴍᴀɪɴ)")
         except Exception as e:
+            print(f"Error: {e}")
             await message.reply_text(f"Eʀʀᴏʀ: ", e)

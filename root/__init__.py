@@ -1,5 +1,6 @@
 from pyrogram import *
 
+ROOTREPO = "https://github.com/otazuki004/QuantumRoBot.git" #Your Repo Link
 prefix = [".","!","?","*","$","#","/"]
 a_id = "10187126" # Your Api Id
 a_hash = "ff197c0d23d7fe54c89b44ed092c1752" # Your Api Hash 

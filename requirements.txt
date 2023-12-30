@@ -1,3 +1,5 @@
+pymongo
+pyromod
 speedtest-cli
 pyrogram
 wget

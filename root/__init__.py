@@ -30,11 +30,6 @@ bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plug
 #clientsEND
 
 #Dont Touch This
-
-try:
-    DIR = f"{os.getcwd()}/"
-    print("Running On ", DIR)
-except Exception as l:
-    print("ERROR", l)
+DIR = f"{os.getcwd()}/"
 
 

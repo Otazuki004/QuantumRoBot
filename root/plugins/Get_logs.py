@@ -1,5 +1,5 @@
 from pyrogram import *
-from root import bot
+from root.__main__ import bot
 import traceback
 from subprocess import getoutput as run
 

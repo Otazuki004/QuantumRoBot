@@ -40,7 +40,7 @@ sys.path.append(DIR)
 
 print(f"[INFO] Running On {DIR}")
 
-Config(
+logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,

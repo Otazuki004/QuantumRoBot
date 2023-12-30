@@ -27,6 +27,7 @@ from yt_dlp import YoutubeDL
 from pyrogram.errors import MessageTooLong
 from subprocess import getoutput as run
 import traceback
+import logging
 import speedtest
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
@@ -38,6 +39,12 @@ os.chdir(DIR)
 sys.path.append(DIR)
 
 print(f"[INFO] Running On {DIR}")
+
+Config(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
+    level=logging.INFO,
+)
 #Codedown
 
 #NewModuleSongVideo↓

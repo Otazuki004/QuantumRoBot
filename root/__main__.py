@@ -9,7 +9,6 @@ async def aexec(code, client, message):
     return await locals()['__ex'](client, message)
 #helperEND
 #Imports
-from __main__ import bot, filters, OWN, DATA
 import subprocess
 from datetime import datetime
 import io
@@ -32,6 +31,7 @@ import speedtest
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import __version__ as Moye
+from __main__ import bot, filters, OWN, DATA
 #MainCodesEND-------
 DATA = data_store_id
 v = f"{sys.version_info.major}.{sys.version_info.minor}"

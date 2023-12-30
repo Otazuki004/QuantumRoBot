@@ -29,3 +29,12 @@ ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Pi
 bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/plugins"))
 #clientsEND
 
+#Dont Touch This
+
+try:
+    DIR = f"{os.getcwd()}/"
+    print("Running On ", DIR)
+except Exception as l:
+    print("ERROR", l)
+
+

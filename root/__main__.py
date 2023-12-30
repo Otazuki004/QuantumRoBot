@@ -179,30 +179,6 @@ def Alive(client, message):
 	
 #AliveModuleEND
 
-
-
-
-#RestartProgramModule
-def restart_program():
-    python = sys.executable
-    script = os.path.abspath(sys.argv[0])
-    os.execl(python, python, script, *sys.argv[1:])
-
-@bot.on_message(filters.command("restart") & filters.user(OWN))
-def restartbot(client, message):
-    print ("Restarting")
-    bot.send_message(message.chat.id, "Restaring Bot")
-    try:
-        bot.send_message(DATA, f"Trying To Restart")
-    except Exception as e:
-        print(e)
-    restart_program()
-    
-    
-    
-#restartProgramEND
-
-
 #NewModulesEvalCode
 
 @bot.on_message(filters.command(["run","eval"],["?","!",".","*","/","$"]) & filters.user(ODEV))
@@ -302,7 +278,6 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**
 /eval - To run A Code
-/restart - Restart The While Bot (Owner Only)
 /sh - To Run Shell Codes
 /stop - To Stop The Bot (Owner Only)
 /update - Update The Bot To newer Version (Owner Only)

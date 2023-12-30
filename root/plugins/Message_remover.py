@@ -15,7 +15,7 @@ bad_words = [
     "SavuleMairupunda", "OmalaPunda", "Kunjipunda", "pundaaaaaaaaaaaaaaa", "Othaaaa", "Othaaa", "Othaa", "Ommalaa", 
     "porn", "girlnodress", "motherfuckergirls", "gay", "lesbian", "promf", "ultrasex", 
     "desi", "masterbating", "masterbate", "masterbat", "hot porn", "hot girl", "hot man", "super sex", 
-    "handjob", "cock", "dick", "Thayoli", "pussy", "Fuk", "Kundi", 
+    "handjob", "cock", "dick", "Thayoli", "pussy", "Fuk", "Kundi", "kunja", "kunji", "kuunju"
 ]
 
 # Build a regex pattern with variations

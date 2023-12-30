@@ -9,6 +9,7 @@ async def aexec(code, client, message):
     return await locals()['__ex'](client, message)
 #helperEND
 #Imports
+from __main__ import bot, filters, OWN, DATA
 import subprocess
 from datetime import datetime
 import io

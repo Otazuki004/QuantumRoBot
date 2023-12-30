@@ -1,5 +1,7 @@
 import os
 from pyrogram import *
+import pyromod.listen
+from pymongo import MongoClient
 
 ROOTREPO = "https://github.com/otazuki004/QuantumRoBot.git" #Your Repo Link
 prefix = [".","!","?","*","$","#","/"]
@@ -23,8 +25,17 @@ data_store_id = "-1002075414845" #Add your Log group ID and Add the bot in that 
 B_US = "Quantum004bot" # Bot Username
 PRE = [".","/","$","+"]
 ROOTVER = "1.0.0"
+MONGODB_URL = "mongodb+srv://nandhaxd:rw5T7YJRjsE3fmk3@cluster0.80igexg.mongodb.net/?retryWrites=true&w=majority"
 #ImageSection
 ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Picture
+
+#DATABASE
+print ("Installing MongoDB")
+MONGO = MongoClient(MONGODB_URL)
+DATABASE = MONGO.root
+print ("MongoDB Successfully installed")
+print ("[Success]")
+#Don't Touch Database
 
 #addclients
 bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/plugins"))

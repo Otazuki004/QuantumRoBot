@@ -1,6 +1,5 @@
 import os
 from pyrogram import *
-import pyromod.listen
 from pymongo import MongoClient
 
 ROOTREPO = "https://github.com/otazuki004/QuantumRoBot.git" #Your Repo Link

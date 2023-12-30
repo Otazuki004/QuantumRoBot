@@ -33,6 +33,8 @@ from pyrogram import __version__ as Moye
 #MainCodesEND-------
 DATA = data_store_id
 v = f"{sys.version_info.major}.{sys.version_info.minor}"
+os.chdir(DIR)
+sys.path.append(DIR)
 #Codedown
 
 #NewModuleSongVideo↓

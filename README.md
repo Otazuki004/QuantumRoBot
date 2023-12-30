@@ -7,6 +7,8 @@ QuantumRoBot, is a Telegram bot designed to enhance your group chat experience. 
 - **Group Management:** QuantumRoBot can help maintain and manage your Telegram group effectively.
 - **Magical Tricks:** Experience the magic as QuantumRoBot performs fun and surprising tricks.
 - **Multimedia:** Download videos and audio from popular platforms with ease.
+- **Ai Features:** You can Chat With Chat-Gpt And Bard For Fast And Easily
+- **Urban Dictionary:** You can Use Urban Dictionary For Fast And Easily
 
 ## Getting Started
 

@@ -2,7 +2,7 @@ import re
 from pyrogram import filters
 from root.__main__ import bot
 from root import allowbw
-
+#An a Hyper Speed Project
 # List of words to filter
 bad_words = [
     "fuck", "Kena", "Mairu", "Sex", "Girlfriendsex", "Mf", "Tf", "Wtf", "Ass", 

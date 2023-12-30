@@ -19,5 +19,5 @@ async def get_profile_from_users(user_id: int):
       try:
          return mm["profile"]
       except KeyError:
-          return "https://graph.org//file/6b06c18453ebb6e6005da.jpg"
+          return "https://telegra.ph/file/d04fc83f3658be1349175.jpg"
           

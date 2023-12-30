@@ -1,3 +1,4 @@
+import io
 from pyrogram import *
 from root.__main__ import bot
 import traceback

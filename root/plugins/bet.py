@@ -1,7 +1,7 @@
 import random
 from root import bot
 from root import prefix 
-from root.modules.main import ask_to_dm_first
+from root.plugins.main import ask_to_dm_first
 from root.database.main import get_users_list
 from root.database.coins import add_coins_to_db, get_coins_from_users
 from root.database.count_won_lose import add_won_count, add_lose_count, get_bet_count

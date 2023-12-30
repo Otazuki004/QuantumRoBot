@@ -409,7 +409,7 @@ PIC = (
 @bot.on_message(filters.command("start") & filters.group)
 def start(bot, message):
         P = random.choice(PIC)
-        time.sleep(3)
+        time.sleep(1.5)
         bot.send_photo(message.chat.id, photo=P, caption=STA1, reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("📚 Help", callback_data="help")]]
         ),

@@ -1,3 +1,4 @@
+import os
 from pyrogram import *
 
 ROOTREPO = "https://github.com/otazuki004/QuantumRoBot.git" #Your Repo Link

@@ -14,7 +14,7 @@ from datetime import datetime
 import io
 import os
 import time
-import root
+from root.plugins.code import PyRun, RUN
 from root import ROOTREPO as rr
 import sys
 import requests

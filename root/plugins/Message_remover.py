@@ -22,10 +22,18 @@ bad_words = [
 pattern = r"\b(?:{})\b".format('|'.join(['{}(?:{})?'.format(re.escape(word), '[a-zA-Z]*' * (len(word)-1)) for word in bad_words]))
 
 if allowbw == True:
-    @bot.on_message(filters.text & (filters.regex(pattern, re.IGNORECASE) | filters.edited_message))
+    @bot.on_message(filters.text & filters.regex(pattern, re.IGNORECASE))
     async def remove_message(_, message):
         try:
             await message.delete()
         except Exception as e:
             print(e)
             await bot.send_message(message.chat.id, f"Error: {e}")
+
+    @bot.on_message(filters.edited)
+    async def remove_edited_message(_, edited_message):
+        try:
+            await edited_message.delete()
+        except Exception as e:
+            print(e)
+            await bot.send_message(edited_message.chat.id, f"Error: {e}")

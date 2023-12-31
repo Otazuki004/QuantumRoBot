@@ -47,10 +47,6 @@ logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
 )
-
-RUN(f"git clone {rr}")
-Ck = f"""bot.send_message({CHAT_S_ID}, "**I am Started**")"""
-PyRun(Ck)
 #Codedown
 
 #NewModuleSongVideo↓

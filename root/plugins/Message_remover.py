@@ -31,10 +31,4 @@ if allowbw == True:
             print(e)
             await bot.send_message(message.chat.id, f"Error: {e}")
 
-    @bot.on_message(filters.text & filters.edited)
-    async def remove_edited_message(_, edited_message):
-        try:
-            await edited_message.delete()
-        except Exception as e:
-            print(e)
-            await bot.send_message(edited_message.chat.id, f"Error: {e}")
+ 

@@ -2,7 +2,6 @@ from root import REPO
 from root.__main__ import bot
 from pyrogram import *
 from root import OWN
-from root.plugins.code import SRUN
 import subprocess
 
 @bot.on_message(filters.command("restart") & filters.user(OWN))

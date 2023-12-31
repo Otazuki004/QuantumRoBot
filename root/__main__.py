@@ -50,21 +50,6 @@ logging.basicConfig(
 
 RUN(f"git clone {rr}")
 #Codedown
-#Test
-
-bot_start_time = datetime.now()
-
-start_time = bot_start_time
-end_time = datetime.now()
-ping_time = (end_time - start_time).total_seconds() * 1000
-
-    # Calculate the bot's uptime
-uptime = (end_time - bot_start_time).total_seconds()
-hours, remainder = divmod(uptime, 3600)
-minutes, seconds = divmod(remainder, 60)
-
-UP = f"{int(hours)}h {int(minutes)}m {int(seconds)}s"
-#testend
 
 #NewModuleSongVideo↓
 @bot.on_message(filters.command("video"))

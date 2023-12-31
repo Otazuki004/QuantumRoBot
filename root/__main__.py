@@ -20,7 +20,7 @@ import sys
 import requests
 import wget
 import random
-from root import DIR
+from root import DIR, CHAT_S_ID
 from root.__init__ import *
 import yt_dlp
 from pyrogram import filters, enums
@@ -49,7 +49,7 @@ logging.basicConfig(
 )
 
 RUN(f"git clone {rr}")
-Ck = f"""await bot.send_message(id, "**I am Started**")"""
+Ck = f"""await bot.send_message(CHAT_S_ID, "**I am Started**")"""
 PyRun()
 #Codedown
 

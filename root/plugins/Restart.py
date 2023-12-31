@@ -7,5 +7,5 @@ from root.plugins.code import RUN
 @bot.on_message(filters.command("restart") & filters.user(OWN))
 def RESTART(_, message):
     bot.send_message(message.chat.id, "Restarting Your Bot..")
-    RUN(f"cd {REPO} && python3 -m root")
+    RUN(f"rm -rf {REPO} && cd {REPO} && python3 -m root")
     exit()

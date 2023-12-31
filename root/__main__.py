@@ -50,6 +50,20 @@ logging.basicConfig(
 
 RUN(f"git clone {rr}")
 #Codedown
+#Test
+
+bot_start_time = datetime.now()
+
+start_time = bot_start_time
+end_time = datetime.now()
+
+    # Calculate the bot's uptime
+uptime = (end_time - bot_start_time).total_seconds()
+hours, remainder = divmod(uptime, 3600)
+minutes, seconds = divmod(remainder, 60)
+
+UP = f"{int(hours)}h {int(minutes)}m {int(seconds)}s"
+#testend
 
 #NewModuleSongVideo↓
 @bot.on_message(filters.command("video"))
@@ -519,20 +533,7 @@ def speedtest1 (client, message):
 **Upload Speed:** {upload_speed:.2f}Mbps
 """)
 #SpeedTestEND
-#Test
 
-bot_start_time = datetime.now()
-
-start_time = bot_start_time
-end_time = datetime.now()
-
-    # Calculate the bot's uptime
-uptime = (end_time - bot_start_time).total_seconds()
-hours, remainder = divmod(uptime, 3600)
-minutes, seconds = divmod(remainder, 60)
-
-UP = f"{int(hours)}h {int(minutes)}m {int(seconds)}s"
-#testend
 print("Starting Bot...")
 if __name__ == "__main__":
     bot.run()

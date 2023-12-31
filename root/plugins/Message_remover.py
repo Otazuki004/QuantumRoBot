@@ -2,7 +2,7 @@ import re
 from pyrogram import filters
 from root.__main__ import bot
 from root import allowbw
-#An a Hyper Speed Project
+
 # List of words to filter
 bad_words = [
     "fuck", "Kena", "Mairu", "Sex", "Girlfriendsex", "Mf", "Tf", "Wtf", "Ass", 
@@ -20,8 +20,9 @@ bad_words = [
 
 # Build a regex pattern with variations
 pattern = r"\b(?:{})\b".format('|'.join(['{}(?:{})?'.format(re.escape(word), '[a-zA-Z]*' * (len(word)-1)) for word in bad_words]))
+
 if allowbw == True:
-    @bot.on_message(filters.text & filters.regex(pattern, re.IGNORECASE))
+    @bot.on_message(filters.text & (filters.regex(pattern, re.IGNORECASE) | filters.edited_message))
     async def remove_message(_, message):
         try:
             await message.delete()

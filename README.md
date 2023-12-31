@@ -27,12 +27,14 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 ## Installation
 
 - ### Linux Environment
-1. Fork The Repository And Run `git clone "Your Repo Link Here"`
-2. Navigate to the project directory: `cd "Your Repository Name Here"`
-3. Add your vars in root/`__init__.py`
-4. Run This Command `pkg install libjpeg-turbo` if error Run This `apt install libjpeg-turbo` else Ask in Support or DM me [Otazuki](https://t.me/Otazuki/) 
-5. Install required packages: `pip install -U -r requirements.txt`
-6. Run the bot using the following command:
+1. Run `apt install python`
+2. Run `apt install git`
+3. Fork The Repository And Run `git clone "Your Repo Link Here"`
+4. Navigate to the project directory: `cd "Your Repository Name Here"`
+5. Add your vars in root/`__init__.py`
+6. Run This Command `pkg install libjpeg-turbo` if error Run This `apt install libjpeg-turbo` else Ask in Support or DM me [Otazuki](https://t.me/Otazuki/) 
+7. Install required packages: `pip install -U -r requirements.txt`
+8. Run the bot using the following command:
 ```python3 -m root```
 
 - ### Heroku Installation

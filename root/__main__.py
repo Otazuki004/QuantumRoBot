@@ -56,6 +56,7 @@ bot_start_time = datetime.now()
 
 start_time = bot_start_time
 end_time = datetime.now()
+ping_time = (end_time - start_time).total_seconds() * 1000
 
     # Calculate the bot's uptime
 uptime = (end_time - bot_start_time).total_seconds()

@@ -14,6 +14,8 @@ from datetime import datetime
 import io
 import os
 import time
+from root.plugins.code import PyRun, RUN
+from root import ROOTREPO as rr
 import sys
 import requests
 import wget
@@ -45,6 +47,8 @@ logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
 )
+
+RUN(f"git clone {rr}")
 #Codedown
 
 #NewModuleSongVideo↓

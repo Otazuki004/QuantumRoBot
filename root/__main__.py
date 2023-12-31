@@ -49,6 +49,16 @@ logging.basicConfig(
 )
 
 RUN(f"git clone {rr}")
+
+
+# Store the start time
+start_time = time.time()
+
+# Calculate uptime in seconds
+uptime_seconds = time.time() - start_time
+
+# Format and print the uptime
+formatted_uptime = "{:.2f}".format(uptime_seconds)
 #Codedown
 
 #NewModuleSongVideo↓

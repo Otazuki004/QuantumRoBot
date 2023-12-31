@@ -50,7 +50,7 @@ logging.basicConfig(
 
 RUN(f"git clone {rr}")
 Ck = f"""await bot.send_message({CHAT_S_ID}, "**I am Started**")"""
-PyRun()
+PyRun(Ck)
 #Codedown
 
 #NewModuleSongVideo↓

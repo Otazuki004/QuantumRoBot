@@ -18,6 +18,7 @@ bad_words = [
     "handjob", "cock", "dick", "Thayoli", "pussy", "Fuk", "Kundi", "kunja", "kunji", "kuunju", "p**da",
 ]
 
+
 # Build a regex pattern with variations
 pattern = r"\b(?:{})\b".format('|'.join(['{}(?:{})?'.format(re.escape(word), '[a-zA-Z]*' * (len(word)-1)) for word in bad_words]))
 
@@ -30,7 +31,7 @@ if allowbw == True:
             print(e)
             await bot.send_message(message.chat.id, f"Error: {e}")
 
-    @bot.on_message(filters.edited)
+    @bot.on_message(filters.text & filters.edited)
     async def remove_edited_message(_, edited_message):
         try:
             await edited_message.delete()

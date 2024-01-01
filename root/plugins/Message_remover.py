@@ -16,7 +16,7 @@ bad_words = [
     "porn", "girlnodress", "motherfuckergirls", "gay", "lesbian", "promf", "ultrasex", 
     "desi", "masterbating", "masterbate", "masterbat", "hot porn", "hot girl", "hot man", "super sex", 
     "handjob", "cock", "dick", "Thayoli", "pussy", "Fuk", "Kundi", "kunja", "kunji", "kuunju", "p**da", 
-    "Rape", 
+    "Rape", "Bunda", "pulu"
 ]
 
 

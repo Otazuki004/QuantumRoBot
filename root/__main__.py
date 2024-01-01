@@ -315,6 +315,7 @@ async def cbbasic(_, query: CallbackQuery):
 /ud - Get Results From Urban Dictionary
 /speedtest - Get Bot Internet SpeedTest
 /chat - To Chat With Chat-Gpt
+/timer - To Set A timer
 **
 """,
         reply_markup=InlineKeyboardMarkup (tate),

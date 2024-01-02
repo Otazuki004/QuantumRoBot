@@ -1,4 +1,4 @@
-FROM python:3.10.0
+FROM python
 
 WORKDIR /root/
 
@@ -8,6 +8,6 @@ RUN pip3 install --upgrade pip setuptools
 
 RUN pip3 install -U -r requirements.txt
 
-RUN pkg install libjpeg-turbo
+RUN apt install libjpeg-turbo
 
-CMD ["python3","-m","bot"]
+RUN python3 -m root

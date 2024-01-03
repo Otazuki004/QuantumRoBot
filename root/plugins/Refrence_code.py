@@ -24,10 +24,17 @@ Information ✅
 - Your Bot Has Been Successfully Created And its Running
 - If Any Problems Ask To @Otazuki Else @FutureCity005
 
+Warrenty ⚡
+
+- Your Bot Have 1 Month Warranty
+- Check About Warrenty [Here](https://t.me/Hyper_Speed0/40).
+- Follow That All Rules
+- Your Warranty Time Started On [4 January 2024]
+
+
 Thanks For Using Us
 
 This Code Will Deleted in January 4 12:00PM (INR)
-
 Powered by: @Hyper_Speed0**
 """
 

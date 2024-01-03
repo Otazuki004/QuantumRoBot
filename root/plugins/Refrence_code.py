@@ -5,12 +5,13 @@ TgBotmk0001Hs = """
 **Valid Code ✅
 
 Bot Status = Process Started ✅
-Estimated Time = 5 To 7 Days
+Estimated Time = 10th January⚡
 
 What Happening Now?
 - Currently Its OUR first Url Downloader Project
 - Repository Created ✅
 - Creating Codes With Gpt-3.5
+- Working Hard
 
 Powered by: @Hyper_Speed0**
 """

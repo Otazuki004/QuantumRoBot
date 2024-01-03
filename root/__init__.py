@@ -29,7 +29,7 @@ ROOTVER = "1.0.0" #Bot Version
 ST_PIC = "https://te.legra.ph/file/283f5c4ae89078521e0df.jpg" # Start Command Picture
 
 #addclients
-bot = Client("QuantumRobot", session_string=STRING_SESSION, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/plugins"))
+bot = Client("QuantumRobot", bot_token=b_tok, api_id=a_id, api_hash=a_hash, plugins=dict(root="root/plugins"))
 #clientsEND
 
 #Dont Touch This

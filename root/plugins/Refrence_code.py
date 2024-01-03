@@ -34,7 +34,7 @@ Warranty ⚡
 
 Thanks For Using Us
 
-This Code Will Deleted in January 4 12:00PM (INR)
+This Code Will Deleted in January 5 12:00PM (IST)
 Powered by: @Hyper_Speed0**
 """
 

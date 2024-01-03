@@ -18,14 +18,15 @@ Powered by: @Hyper_Speed0**
 TgBotmk0002Hsv2 = """
 **Valid Code ✅
 
-Bot Status = 40% Done
-Estimated time - Jan 3, 10:00PM
+Bot Status = Created ✅
 
-What Happening Now?
-- Currently Old Codes Not Worked So
-- We Created New Code For You
-- Chat gpt Helping Us
-- Working Hard
+Information ✅
+- Your Bot Has Been Successfully Created And its Running
+- If Any Problems Ask To @Otazuki Else @FutureCity005
+
+Thanks For Using Us
+
+This Code Will Deleted in January 4 12:00PM (INR)
 
 Powered by: @Hyper_Speed0**
 """

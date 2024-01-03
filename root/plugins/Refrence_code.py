@@ -2,7 +2,7 @@ from root.__main__ import bot
 from pyrogram import *
 
 TgBotmk0001Hs = """
-*"Valid Code ✅**
+**Valid Code ✅
 
 Bot Status = Process Started ✅
 Estimated Time = 5 To 7 Days
@@ -12,7 +12,7 @@ What Happening Now?
 - Repository Created ✅
 - Creating Codes With Gpt-3.5
 
-**Powered by: @Hyper_Speed0**
+Powered by: @Hyper_Speed0**
 """
 
 @bot.on_message(filters.command("refrence"))

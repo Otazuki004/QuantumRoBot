@@ -21,6 +21,8 @@ async def refrence(_, message):
     try:
         if query == "TgBotmk0001Hs":
             await bot.send_message(message.chat.id, TgBotmk0001Hs)
+        else:
+            await bot.send_message(message.chat.id, "Invalid Code ❌")
     except Exception as e:
         await bot.send_message(message.chat.id, "Went Wrong")
         print(e)

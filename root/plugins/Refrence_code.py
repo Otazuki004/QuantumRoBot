@@ -15,13 +15,16 @@ What Happening Now?
 
 Powered by: @Hyper_Speed0**
 """
+Ht = "tst"
+
+Code = [TgBotmk0001Hs, Ht]
 
 @bot.on_message(filters.command("refrence"))
 async def refrence(_, message):
     query = " ".join(message.command[1:])
     try:
-        if query == "TgBotmk0001Hs":
-            await bot.send_message(message.chat.id, TgBotmk0001Hs)
+        if query == Code:
+            await bot.send_message(message.chat.id, Code)
         else:
             await bot.send_message(message.chat.id, "Invalid Code ❌")
     except Exception as e:

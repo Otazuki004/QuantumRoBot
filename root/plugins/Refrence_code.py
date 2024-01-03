@@ -17,7 +17,7 @@ What Happening Now?
 """
 
 @bot.on_message(filters.command("refrence"))
-def refrence(_, message):
+async def refrence(_, message):
     query = " ".join(message.command[1:])
     try:
         await bot.send_message(message.chat.id, query)

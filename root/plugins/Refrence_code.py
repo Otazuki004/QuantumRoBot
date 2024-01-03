@@ -19,7 +19,8 @@ What Happening Now?
 async def refrence(_, message):
     query = " ".join(message.command[1:])
     try:
-        await bot.send_message(message.chat.id, query)
+        if query == "TgBotmk0001Hs":
+            await bot.send_message(message.chat.id, TgBotmk0001Hs)
     except Exception as e:
         await bot.send_message(message.chat.id, "Went Wrong")
         print(e)

@@ -518,6 +518,25 @@ def speedtest1 (client, message):
 **Upload Speed:** {upload_speed:.2f}Mbps
 """)
 #SpeedTestEND
+#NewModuleRenamer
+
+@bot.on_message(filters.command("rename"))
+def rename(_, message):
+    thumb_id = "AgACAgUAAxkBAAIU_GWVRvmTGuZetRNsGy5eOkagBwRIAAJAuDEbxKKwVKJd7WJVNfZTAAgBAAMCAAN5AAceBA"
+
+    try:
+        filename = message.text.replace(message.text.split(" ")[0], "")
+
+    except Exception as e:
+        print(e)
+
+    if reply := message.reply_to_message:
+        x = message.reply_text("Downloading.....")
+        path = reply.download(file_name=filename)
+        x.edit("Uploading.....")
+        message.reply_document(path, thumb=thumb_id, caption=filename)
+        os.remove(path)
+#RenamerEND
 
 print("Starting Bot...")
 if __name__ == "__main__":

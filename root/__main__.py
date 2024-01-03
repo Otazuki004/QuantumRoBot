@@ -317,6 +317,7 @@ async def cbbasic(_, query: CallbackQuery):
 /chat - To Chat With Chat-Gpt
 /timer - To Set A timer
 /code [your reference code from @hyper_speed0]
+/rename - To rename A file
 **
 """,
         reply_markup=InlineKeyboardMarkup (tate),

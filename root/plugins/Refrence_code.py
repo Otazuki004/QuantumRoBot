@@ -24,7 +24,7 @@ Information ✅
 - Your Bot Has Been Successfully Created And its Running
 - If Any Problems Ask To @Otazuki Else @FutureCity005
 
-Warrenty ⚡
+Warranty ⚡
 
 - Your Bot Have 1 Month Warranty
 - Check About Warrenty [Here](https://t.me/Hyper_Speed0/40).

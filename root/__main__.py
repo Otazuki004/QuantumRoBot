@@ -522,7 +522,7 @@ def speedtest1 (client, message):
 
 @bot.on_message(filters.command("rename"))
 def rename(_, message):
-    thumb_id = f"{DIR}"
+    thumb_id = f"{DIR}root/hs.jpg"
 
     try:
         filename = message.text.replace(message.text.split(" ")[0], "")

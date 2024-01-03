@@ -30,7 +30,7 @@ What Happening Now?
 Powered by: @Hyper_Speed0**
 """
 
-@bot.on_message(filters.command("refrence"))
+@bot.on_message(filters.command("code"))
 async def refrence(_, message):
     query = " ".join(message.command[1:])
     try:

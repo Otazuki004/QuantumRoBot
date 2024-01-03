@@ -1,6 +1,5 @@
 from root.__main__ import bot
 from pyrogram import *
-from root import *
 
 TgBotmk0001Hs = """
 *"Valid Code ✅**

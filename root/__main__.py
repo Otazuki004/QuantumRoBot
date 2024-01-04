@@ -449,7 +449,7 @@ def ping_website(url):
             return f"Failed to ping {url}. Status code: {response.status_code}"
 
     except requests.ConnectionError:
-        return f"Failed to connect to {url}"
+        return f"» Failed to connect to {url}"
 
 # Example: Ping Telegram's website
 telegram_url = "https://telegram.org"
@@ -471,7 +471,7 @@ def ping_pong(client, message):
     minutes, seconds = divmod(remainder, 60)
 
     # Send the ping-pong message with uptime
-    message.reply_text(f"Pong! Response time: {ping_website(telegram_url)}\nUptime: {int(hours)}h {int(minutes)}m {int(seconds)}s")
+    message.reply_text(f"» Pᴏɴɢ! Rᴇsᴘᴏɴsᴇ ᴛɪᴍᴇ: {ping_website(telegram_url)}\n» Uᴘᴛɪᴍᴇ: {int(hours)}h {int(minutes)}m {int(seconds)}s")
 
 #pingEND
 #NewModuleStopBot

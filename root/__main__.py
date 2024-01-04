@@ -536,6 +536,7 @@ def rename(_, message):
                     x.edit("Uploading.....")
                     message.reply_document(path, caption=filename)
                     os.remove(path)
+                    x.delete()
                 else:
                     bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")
         except Exception as e:

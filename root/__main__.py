@@ -538,15 +538,15 @@ def rename(_, message):
                     message.reply_document(path, thumb=thumb_id, caption=filename)
                     os.remove(path)
                 else:
-                    bot.send_message(message.chat.id, "**USAGE** `/rename` [file name] And Reply A media")
+                    bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")
         except Exception as e:
             print(e)
             message.reply_text(f"**Error: ** {e}")
     else:
-        bot.send_message(message.chat.id, "**Reply To A File 🗃️**")
+        bot.send_message(message.chat.id, "**Reply to a file 🗃️**")
 #RenamerEND
 
 print("Starting Bot...")
 if __name__ == "__main__":
     bot.run()
-    print ("bot Started")
+    print ("bot started")

@@ -524,7 +524,6 @@ def speedtest1 (client, message):
 #NewModuleRenamer
 @bot.on_message(filters.command("rename"))
 def rename(_, message):
-    thumb_id = f"{DIR}root/hs.jpg"
     if reply := message.reply_to_message:
         try:
             filename = message.text.replace(message.text.split(" ")[0], "")
@@ -535,7 +534,7 @@ def rename(_, message):
                     x = message.reply_text("Downloading.....")
                     path = reply.download(file_name=filename)
                     x.edit("Uploading.....")
-                    message.reply_document(path, thumb=thumb_id, caption=filename)
+                    message.reply_document(path, caption=filename)
                     os.remove(path)
                 else:
                     bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")

@@ -8,7 +8,7 @@ from pyrogram.enums import ChatAction
 @bot.on_message(filters.command("logs"))
 async def logs(_, message):
     run_logs = run("cat log.txt")
-    text = message.reply_text("Trying to Sending logs...")
+    text = await message.reply_text("Sending logs...")
     await bot.send_chat_action(message.chat.id, ChatAction.UPLOAD_DOCUMENT)
     with io.BytesIO(str.encode(run_logs)) as logs:
         logs.name = "log.txt"

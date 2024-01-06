@@ -49,7 +49,6 @@ logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
 )
-bot.start()
 #Codedown
 
 #NewModuleSongVideo↓
@@ -557,5 +556,5 @@ def rename(_, message):
 
 print("Starting Bot...")
 if __name__ == "__main__":
+    bot.run()
     print (f"[{B_NAME}] Successfully Stoped All Process")
-    bot.stop()

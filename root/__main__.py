@@ -196,7 +196,7 @@ def Alive(client, message):
 @bot.on_message(filters.command(["run","eval"],["?","!",".","*","/","$"]) & filters.user(ODEV))
 async def eval(client, message):
     if len(message.text.split()) <2:
-          return await message.reply_text("`No input?`")
+          return await message.reply_text("Where Is Input?")
     status_message = await message.reply_text("Processing ...")
     cmd = message.text.split(None, 1)[1]
     start = datetime.now()
@@ -251,8 +251,10 @@ async def eval(client, message):
 #NewModuleShell
 
 
-@bot.on_message(filters.command(["sh","shell"],["?","!",".","*","/","$"])& filters.user(ODEV))
+@bot.on_message(filters.command(["sh","shell","bash"],["?","!",".","*","/","$"])& filters.user(ODEV))
 async def sh(client, message):
+    if len(message.text.split()) <2:
+        return await message.reply_text("Please give a input to run")
     code = message.text.replace(message.text.split(" ")[0], "")
     x = run(code)
     string = f"**📎 Input**: `{code}`\n\n**📒 Output **:\n`{x}`"

@@ -558,3 +558,4 @@ def rename(_, message):
 print("Starting Bot...")
 if __name__ == "__main__":
     print (f"[{B_NAME}] Successfully Stoped All Process")
+    bot.stop()

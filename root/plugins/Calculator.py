@@ -61,7 +61,7 @@ async def calculator_callback(_, query):
 
     # Update inline keyboard
     keyboard = [
-        [InlineKeyboardButton(int(i), callback_data=int(i)) for i in range(1, 10)],
+        [InlineKeyboardButton(str(i), callback_data=str(i)) for i in range(1, 10)],
         [InlineKeyboardButton("0", callback_data="0"),
          InlineKeyboardButton("9", callback_data="9")],
         [InlineKeyboardButton("+", callback_data="+"),

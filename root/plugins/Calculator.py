@@ -9,13 +9,15 @@ from root.__main__ import bot
 # Dictionary to store user inputs
 user_inputs = {}
 
+import ast
+
 async def calculate_expression(expression):
     try:
-        await bot.send_message(message.chat.id, expression)
-        return f"Result: {expression}"
+        result = ast.literal_eval(expression)
+        return f"Result: {result}"
     except Exception as e:
         return f"Error: {e}"
-
+        
 @bot.on_message(filters.command("calculator"))
 def start_calculator(_, message):
     user_id = message.from_user.id

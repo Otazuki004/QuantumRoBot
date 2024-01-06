@@ -32,6 +32,7 @@ from subprocess import getoutput as run
 import traceback
 import logging
 import speedtest
+from pyrogram.enums import *
 from contextlib import redirect_stdout
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import __version__ as Moye

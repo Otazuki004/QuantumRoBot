@@ -39,7 +39,8 @@ audio_formats = ['mp3', 'wav', 'ogg', 'aac', 'flac', 'wma', 'm4a']
 text_formats = ['txt', 'csv', 'json', 'xml', 'html', 'md', 'pdf', 'text']
 coding_languages = ['py', 'java', 'js', 'c', 'css', 'ruby', 'php', 'swift']
 Image_Formats = ['jpeg', 'png', 'gif', 'tiff', 'bmp', 'webp', 'jpg']
+other_formats = ['apk', 'bat', 'jar', 'iso']
 
-formats = [video_formats, audio_formats, text_formats, coding_languages, Image_Formats]
+formats = [video_formats, audio_formats, text_formats, coding_languages, Image_Formats, other_formats]
 
 

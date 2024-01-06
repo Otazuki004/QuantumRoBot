@@ -529,7 +529,7 @@ def speedtest1 (client, message):
 def rename(_, message):
     if reply := message.reply_to_message:
         if len(message.text.split()) <2:
-            return await message.reply_text("**Please Enter A Text ⚠️**")
+            return bot.send_message(message.chat.id, "**Please Enter A Text ⚠️**")
         try:
             filename = message.text.replace(message.text.split(" ")[0], "")
             if not any(filename.endswith(format) for format_list in formats for format in format_list):

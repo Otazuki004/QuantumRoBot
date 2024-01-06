@@ -12,8 +12,7 @@ user_inputs = {}
 async def calculate_expression(expression):
     try:
         await bot.send_message(message.chat.id, expression)
-        output = eval(expression, 0)
-        return f"Result: {output}"
+        return f"Result: {expression}"
     except Exception as e:
         return f"Error: {e}"
 
@@ -62,7 +61,7 @@ async def calculator_callback(_, query):
 
     # Update inline keyboard
     keyboard = [
-        [InlineKeyboardButton(str(i), callback_data=str(i)) for i in range(1, 10)],
+        [InlineKeyboardButton(int(i), callback_data=int(i)) for i in range(1, 10)],
         [InlineKeyboardButton("0", callback_data="0"),
          InlineKeyboardButton("9", callback_data="9")],
         [InlineKeyboardButton("+", callback_data="+"),

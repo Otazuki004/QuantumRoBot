@@ -12,7 +12,7 @@ user_inputs = {}
 async def calculate_expression(expression):
     try:
         await bot.send_message(message.chat.id, expression)
-        output = eval(expression+0)
+        output = eval(expression, 0)
         return f"Result: {output}"
     except Exception as e:
         return f"Error: {e}"

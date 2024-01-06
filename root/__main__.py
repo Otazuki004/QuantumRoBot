@@ -544,12 +544,12 @@ def rename(_, message):
                     x.delete()
                 else:
                     bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")
-        except Exception as e:
-            if e == "This message doesn't contain any downloadable media":
-                message.reply_text("Please reply to any Downloadable Media")
+        except Exception as er:
+            if er == "This message doesn't contain any downloadable media":
+                bot.send_message(message.chat.id, "Please reply to any Downloadable Media")
             else:
-                print(e)
-                message.reply_text(f"**Error: ** {e}")
+                print(er)
+                message.reply_text(f"**Error: ** {er}")
     else:
         bot.send_message(message.chat.id, "**Reply to a file 🗃️**")
 #RenamerEND

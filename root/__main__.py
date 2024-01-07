@@ -433,10 +433,13 @@ def start(bot, message):
 
 #GroupStartEND
 
-#NewModuleAdmins
+#NewModuleDICE
 
+@bot.on_message(filters.command("dice"))
+def roll(client, message):
+    bot.send_dice(message.chat.id)
 
-#AdminsEND
+#DiceEND
 
 #NewModuleping
 def ping_website(url):

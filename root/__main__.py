@@ -322,6 +322,7 @@ async def cbbasic(_, query: CallbackQuery):
 /timer - To Set A timer
 /code [your reference code from @hyper_speed0]
 /rename - To rename A file
+/time - Get INDIAN Time
 **
 """,
         reply_markup=InlineKeyboardMarkup (tate),

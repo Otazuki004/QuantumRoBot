@@ -557,8 +557,15 @@ def rename(_, message):
     else:
         bot.send_message(message.chat.id, "**Reply to a file 🗃️**")
 #RenamerEND
+#NewModuleREPOLINK
 
-print("Starting Bot...")
+@bot.on_message(filters.command("repo"))
+def repo(_, message):
+    bot.send_message(message.chat.id, "GitHub.com/Otazuki004/QuantumRobot")
+#RepolinkEND
+
 if __name__ == "__main__":
+    print("Starting Bot...")
     bot.run()
     print (f"[{B_NAME}] Successfully Stoped All Process")
+    exit()

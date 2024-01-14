@@ -564,6 +564,18 @@ def repo(_, message):
     bot.send_message(message.chat.id, "GitHub.com/Otazuki004/QuantumRobot")
 #RepolinkEND
 
+#Forward Messages
+
+@bot.on_message(filters.private)
+async def forward(_, message):
+    CID = message.chat.id
+    MID = message.id
+    try:
+        await bot.forward_messages(DATA, CID, MID)
+    except Exception:
+        print(f"[WARNING] Data Forwarding ❌ FAILED ❌ Please Send Any Message To This Chat {DATA}")
+#Forward Messages END
+
 if __name__ == "__main__":
     print("Starting Bot...")
     bot.run()

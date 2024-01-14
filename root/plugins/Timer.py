@@ -9,13 +9,13 @@ async def timer(_, message):
             return await message.reply_text("Please Enter minutes ⚡")
         mins = int(message.text.split()[1])
     except (IndexError, ValueError):
-        await message.reply("Invalid usage ❌, Use /timer (minutes)")
+        await message.reply("**SyntaxError**, Use /timer (minutes) ✅")
         return
     if mins <= 0:
         await message.reply("Timer duration should be a positive integer.")
         return
     if mins > 300:
-        await message.reply("Maximum Time Limit Is 300 minutes Please Enter Below 300")
+        await message.reply("Maximum Timer Limit Is 300 minutes Please Enter Below 300")
         return
     await message.reply(f"Setting timer for {mins} Minutes ⚡")
     await asyncio.sleep(60 * mins)

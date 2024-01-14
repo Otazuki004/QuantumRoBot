@@ -14,6 +14,9 @@ async def timer(_, message):
     if mins <= 0:
         await message.reply("Timer duration should be a positive integer.")
         return
+    if mins > 300:
+        await message.reply("Maximum Time Limit Is 300 minutes Please Enter Below 300")
+        return
     await message.reply(f"Setting timer for {mins} Minutes ⚡")
     await asyncio.sleep(60 * mins)
     await message.reply("Your Timer has been completed ✅")

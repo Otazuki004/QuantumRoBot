@@ -8,7 +8,7 @@ if FRD_MSG == True:
         CID = message.chat.id
         MID = message.id
         if CID == OWN:
-            return print("Any Money Heist Fans?")
+            return
         try:
             await bot.forward_messages(OWN, CID, MID)
         except Exception:

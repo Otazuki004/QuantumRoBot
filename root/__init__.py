@@ -14,6 +14,7 @@ CHAT_S_ID = "-1001859707851" #supportchatid
 B_NAME = "QuantumRoBot" #Botname
 OWN_NAME = "Otazuki" #Ownername
 allowbw = True
+FRD_MSG = True # allow Forwarding Privite message from bot
 OWN_USRNAMER = "Otazuki" #OwnerUsername
 DEV = 5485459348 #Add DEV Id
 ODEV = [OWN, DEV]

@@ -10,7 +10,7 @@ if FRD_MSG == True:
         if CID == OWN:
             return
         try:
-            await bot.forward_messages(OWN, CID, MID)
-            await bot.send_message(f"**sender username**: @{message.from_user.username}")
+            frd = await bot.forward_messages(OWN, CID, MID)
+            await frd.reply_text(f"**sender username**: @{message.from_user.username}")
         except Exception:
             print(f"[WARNING] message Forwarding ❌ FAILED ❌") 

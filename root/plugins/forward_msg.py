@@ -2,7 +2,7 @@ from pyrogram import *
 from root import OWN, FRD_MSG
 from root.__main__ import bot
 
-if FRD_MSG == True:
+if FRD_MSG == True: #You can off this In __init__.py
     @bot.on_message(filters.private)
     async def forward(_, message):
         CID = message.chat.id
@@ -11,6 +11,7 @@ if FRD_MSG == True:
             return
         try:
             frd = await bot.forward_messages(OWN, CID, MID)
-            await frd.reply_text(f"**sender username**: @{message.from_user.username}")
-        except Exception:
-            print(f"[WARNING] message Forwarding ❌ FAILED ❌") 
+            await frd.reply_text(f"**Sender Username**: @{message.from_user.username}\n**Sender Id**: {message.from_user.id}")
+        except Exception as e:
+            print(f"[WARNING] Message Forwarding is FAILED ")
+            print(e)

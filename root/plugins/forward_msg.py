@@ -11,5 +11,6 @@ if FRD_MSG == True:
             return
         try:
             await bot.forward_messages(OWN, CID, MID)
+            await bot.send_message(f"**sender username**: @{message.from_user.username}")
         except Exception:
-            print(f"[WARNING] message Forwarding ❌ FAILED ❌")
+            print(f"[WARNING] message Forwarding ❌ FAILED ❌") 

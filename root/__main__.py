@@ -240,6 +240,7 @@ async def eval(client, message):
     if len(final_output) > 4096:
         with io.BytesIO(str.encode(final_output)) as out_file:
             out_file.name = "eval.text"
+            await bot.send_chat_action(message.chat.id, ChatAction.UPLOAD_DOCUMENT)
             await reply_to_.reply_document(
                 document=out_file, caption=cmd, disable_notification=True
             )
@@ -264,6 +265,7 @@ async def sh(client, message):
     except Exception as e:
         with io.BytesIO(str.encode(string)) as out_file:
             out_file.name = "shell.text"
+            await bot.send_chat_action(message.chat.id, ChatAction.UPLOAD_DOCUMENT)
             await message.reply_document(document=out_file, caption="Shell Output")
             async def aexec(code, client, message):
                 exec(

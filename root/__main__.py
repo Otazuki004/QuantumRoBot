@@ -264,7 +264,7 @@ async def sh(client, message):
     except Exception as e:
         with io.BytesIO(str.encode(string)) as out_file:
             out_file.name = "shell.text"
-            await message.reply_document(document=out_file, caption=e)
+            await message.reply_document(document=out_file, caption="Shell Output")
             async def aexec(code, client, message):
                 exec(
         "async def __aexec(client, message): "
@@ -409,7 +409,6 @@ STA1= f"""**
 ‣ I can Download Songs and Videos From YouTube
 ‣ I can Generate Fonts from your Query
 ‣ I can Help You to manage Your Groups
-‣ I can Give Simple Bet Game
 ‣ New Update Within 5 Weeks
 ‣ Support Group Available
 ‣ Public Repo Available

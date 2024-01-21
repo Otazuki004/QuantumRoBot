@@ -48,7 +48,7 @@ no_reply_user = """ ╒═══「 Appraisal results:」
 ɴᴀᴍᴇ: {}
 ᴜsᴇʀɴᴀᴍᴇ: @{}
 ᴘᴇʀᴍᴀʟɪɴᴋ: {}
-ᴜsᴇʀʙɪᴏ: {}
+ᴜsᴇʀʙɪᴏ: `{}`
 
 **Meet Me Here🙈 @FutureCity005 ✨🥀**
 """
@@ -67,7 +67,7 @@ async def info(_, m):
         file_id = info.photo.big_file_id
         photo = await bot.download_media(file_id)
         user_id = info.id
-        first_name = info.first_name
+        first_name = f"{info.first_name} {info.last_name}"
         username = info.username
         user_bio = info.bio
         dc_id = info.dc_id
@@ -80,7 +80,7 @@ async def info(_, m):
         )
     elif not info.photo:
         user_id = info.id
-        first_name = info.first_name
+        first_name = f"{info.first_name} {info.last_name}"
         username = info.username
         user_bio = info.bio
         dc_id = info.dc_id

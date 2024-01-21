@@ -5,7 +5,7 @@ import traceback
 from subprocess import getoutput as run
 from pyrogram.enums import ChatAction
 
-@bot.on_message(filters.command("logs"))
+@bot.on_message(filters.command(["logs", "log"]))
 async def logs(_, message):
     run_logs = run("tail log.txt")
     text = await message.reply_text("`Getting logs...`")
@@ -16,10 +16,10 @@ async def logs(_, message):
 
 
 
-@bot.on_message(filters.command("flogs"))
+@bot.on_message(filters.command(["flogs", "flog"]))
 async def logs(_, message):
     run_logs = run("cat log.txt")
-    text = await message.reply_text("Sending Full logs...")
+    text = await message.reply_text("`Sending Full logs...`")
     await bot.send_chat_action(message.chat.id, ChatAction.UPLOAD_DOCUMENT)
     with io.BytesIO(str.encode(run_logs)) as logs:
         logs.name = "log.txt"

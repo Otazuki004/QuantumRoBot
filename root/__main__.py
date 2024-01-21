@@ -542,7 +542,16 @@ def rename(_, message):
             else:
                 if reply := message.reply_to_message:
                     x = message.reply_text("Downloading.....")
-                    path = reply.download(file_name=filename)
+                    try:
+                        path = reply.download(file_name=filename)
+                    except Exception as e:
+                        if str(e) == "This message doesn't contain any downloadable media":
+                            x.delete()
+                            message.reply_text("**Please Reply To Downloadable file 🗃️**")
+                        else:
+                            message.reply_text(e)
+                            print(e)
+                        
                     x.edit("Uploading.....")
                     message.reply_document(path, caption=filename)
                     os.remove(path)
@@ -550,8 +559,8 @@ def rename(_, message):
                 else:
                     bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")
         except Exception as er:
-            if str(er) == "This message doesn't contain any downloadable media":
-                message.reply_text("Please reply to any Downloadable Media")
+            if er == "This message doesn't contain any downloadable media":
+                message.reply("Please reply to any Downloadable Media")
             else:
                 print(er)
                 message.reply_text(f"**Error: **{er}")

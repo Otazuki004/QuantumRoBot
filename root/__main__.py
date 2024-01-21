@@ -534,7 +534,7 @@ def speedtest1 (client, message):
 def rename(_, message):
     if reply := message.reply_to_message:
         if len(message.text.split()) <2:
-            return bot.send_message(message.chat.id, "**Please Enter A Text ⚠️**")
+            return bot.send_message(message.chat.id, "**Please enter Text ⚠️**")
         try:
             filename = message.text.replace(message.text.split(" ")[0], "")
             if not any(filename.endswith(format) for format_list in formats for format in format_list):
@@ -550,11 +550,11 @@ def rename(_, message):
                 else:
                     bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")
         except Exception as er:
-            if er == "This message doesn't contain any downloadable media":
-                bot.send_message(message.chat.id, "Please reply to any Downloadable Media")
+            if str(er) == "This message doesn't contain any downloadable media":
+                message.reply_text("Please reply to any Downloadable Media")
             else:
                 print(er)
-                message.reply_text(f"**Error: ** {er}")
+                message.reply_text(f"**Error: **{er}")
     else:
         bot.send_message(message.chat.id, "**Reply to a file 🗃️**")
 #RenamerEND

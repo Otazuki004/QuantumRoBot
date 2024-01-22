@@ -507,7 +507,10 @@ async def urban_dictionary(_, message):
 
 **⚠️ Warning Urban Dictionary Not Always Provide Accurate Answers ⚠️**
 
-{results["list"][0]["definition"]}\n\n{results["list"][0]["example"]}
+{results["list"][0]["definition"]}\n
+**Example:**
+
+{results["list"][0]["example"]}
 """
         except Exception as e: 
               return await bot.send_message(message.chat.id, f"Somthing wrong Happens:\n`{e}`")

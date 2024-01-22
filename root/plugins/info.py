@@ -4,7 +4,7 @@ from root import OWN as OWNER_ID
 from root.__main__ import bot
 from pyrogram import *
 
-@bot.on_message(filters.command("cinfo", prefixes=HANDLER) & filters.user(OWNER_ID))
+@bot.on_message(filters.command("cinfo", prefixes=HANDLER))
 async def cinfo(_, m):
     reply = m.reply_to_message
     if not reply:
@@ -54,7 +54,7 @@ no_reply_user = """ ╒═══「 Appraisal results:」
 """
 
 
-@bot.on_message(filters.command("info", prefixes=HANDLER) & filters.user(OWNER_ID))
+@bot.on_message(filters.command("info", prefixes=HANDLER))
 async def info(_, m):
     m.reply_to_message
     if len(m.command) < 2:

@@ -28,7 +28,23 @@ async def ban(_, message):
         except Exception as errors:
            await message.reply(f"**Error**: {errors}")
            raise Exception ("Error In Admin Module", errors)
-
+@bot.on_message(filters.command("pin"))
+async def pin (_, message):
+    try:
+        if not get.privileges:
+            await message.reply("You don't Have Rights To use This")
+            return
+        elif not message.reply_to_message:
+            await message.reply("Please reply To Message to pin")
+            return
+        elif get.privileges.can_pin_messages:
+            await bot.pin_chat_message(message.chat.id, message_id=message.reply_to_message_id)
+        else:
+            await message.reply("You don't Have Rights To use This")
+            return
+    except Exception as e:
+        await message.reply(e)
+        print(e)
 
 @bot.on_message(filters.command("unban"))
 async def unban(_, message):

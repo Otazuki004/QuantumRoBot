@@ -503,13 +503,13 @@ async def urban_dictionary(_, message):
           results = requests.get(
             f'https://api.urbandictionary.com/v0/define?term={text}').json()
           reply_text = f"""
-**Results: {text}**
+**𝗪𝗢𝗥𝗗 : {text}**
 
 **⚠️ Warning Urban Dictionary Not Always Provide Accurate Answers ⚠️**
 
+𝗗𝗘𝗙𝗜𝗡𝗔𝗧𝗜𝗢𝗡 :
 {results["list"][0]["definition"]}\n
-**Example:**
-
+**𝗘𝗫𝗔𝗠𝗣𝗟𝗘 : **
 {results["list"][0]["example"]}
 """
         except Exception as e: 
@@ -517,7 +517,7 @@ async def urban_dictionary(_, message):
         ud = await bot.send_message(message.chat.id, "Exploring....")
         await ud.edit_text(reply_text)
 #udEND
-
+#Hyper
 #NewModuleSpeedTest
 @bot.on_message(filters.command("speedtest"))
 def speedtest1 (client, message):

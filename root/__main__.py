@@ -280,12 +280,12 @@ async def sh(client, message):
 
 tate = [
     [
-InlineKeyboardButton("Developer Commands", 
+InlineKeyboardButton("🧑‍💻 Developer Commands", 
 callback_data="dhelp"),
     ],
     [
 
-InlineKeyboardButton("Administrator Commands", 
+InlineKeyboardButton("👮‍♂️ Administrator Commands", 
 callback_data="adminp"),
     ],
 ]
@@ -293,12 +293,11 @@ callback_data="adminp"),
 @bot.on_callback_query(filters.regex("dhelp"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**
-/eval - To run A Code
-/sh - To Run Shell Codes
-/stop - To Stop The Bot (Owner Only)
-/update - Update The Bot To newer Version (Owner Only)
-**
+        f"""**🧑‍💻 Developers Commands**
+• /eval - To run A Code
+• /sh - To Run Shell Codes
+• /stop - To Stop The Bot (Owner Only)
+• /update - Update The Bot To newer Version (Owner Only)
 """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="help")]]
@@ -309,38 +308,36 @@ async def cbbasic(_, query: CallbackQuery):
 @bot.on_callback_query(filters.regex("help"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**
-/song - To Get what song you want 
-/video - To Get What Video you Want 
-/alive - To Check bot alive or not
-/id - Get a User Id/Chat ID
-/help - To Check a Bot Commands
-/tm - Reply a media To Get telegra.ph link
-/dice - Bot send you random dice
-/ping - To Check ping
-/ud - Get Results From Urban Dictionary
-/speedtest - Get Bot Internet SpeedTest
-/chat - To Chat With Chat-Gpt
-/timer - To Set A timer
-/code [your reference code from @hyper_speed0]
-/rename - To rename A file
-/time - Get INDIAN Time
-**
+        f"""**Basic Commands**
+• /song - To Get what song you want 
+• /video - To Get What Video you Want 
+• /alive - To Check bot alive or not
+• /id - Get a User Id/Chat ID
+• /help - To Check a Bot Commands
+• /tm - Reply a media To Get telegra.ph link
+• /dice - Bot send you random dice
+• /ping - To Check ping
+• /ud - Get Results From Urban Dictionary
+• /speedtest - Get Bot Internet SpeedTest
+• /chat - To Chat With Chat-Gpt
+• /timer - To Set A timer
+• /code [your reference code from @hyper_speed0]
+• /rename - To rename A file
+• /time - Get Time
 """,
         reply_markup=InlineKeyboardMarkup (tate),
     )
 
-ADM = f"""**
-/admins - To Get Admin list in your group 
-/ban - Reply to ban Anyone (Admin)
-/unban - Reply to Unban Anyone (Admin)
-/pin - To Pin a any message (Admin)
-/unpin - To unpin a any message (Admin)
-/del - To Delete a any message (admin)
-/promote - To promote Anyone (Admin)
-/setgtitle - To Change Group Title (Admin)
-/setgpic - To Change Group pic (Admin)
-**
+ADM = f"""**Admin Commands 👮‍♂️**
+• /admins - To Get Admin list in your group 
+• /ban - Reply to ban Anyone (Admin)
+• /unban - Reply to Unban Anyone (Admin)
+• /pin - To Pin a any message (Admin)
+• /unpin - To unpin a any message (Admin)
+• /del - To Delete a any message (admin)
+• /promote - To promote Anyone (Admin)
+• /setgtitle - To Change Group Title (Admin)
+• /setgpic - To Change Group pic (Admin)
 """
 
 START = f"""**

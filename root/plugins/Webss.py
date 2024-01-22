@@ -21,12 +21,14 @@ async def take_ss(_, message):
                         quote=False)
                         await m.delete()
                     except TypeError:
-                        return await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
-                        await m.delete()
+                        await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
+                        return
                     except Exception as e:
                         if str(e) == """Telegram says: [400 WEBPAGE_CURL_FAILED] - Telegram server could not fetch the provided URL (caused by "messages.SendMedia")""":
                             await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
-                            await m.delete()
+                            return
+                        elif str(e) == """Telegram says: [400 MEDIA_EMPTY] - The media you tried to send is invalid (caused by "messages.SendMedia")""":
+                            await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
                             return
                         await message.reply_text(str(e))
         

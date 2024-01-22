@@ -24,6 +24,10 @@ async def take_ss(_, message):
                         return await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
                         await m.delete()
                     except Exception as e:
+                        if str(e) == """Telegram says: [400 WEBPAGE_CURL_FAILED] - Telegram server could not fetch the provided URL (caused by "messages.SendMedia")""":
+                            await m.edit("» ɴᴏ sᴜᴄʜ ᴡᴇʙsɪᴛᴇ.")
+                            await m.delete()
+                            return
                         await message.reply_text(str(e))
         
             else:

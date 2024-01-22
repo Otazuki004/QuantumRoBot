@@ -559,6 +559,8 @@ def rename(_, message):
                 else:
                     bot.send_message(message.chat.id, "**USAGE `/rename` [File Name] And Reply A media ⚡ **")
         except Exception as er:
+            if str(er) == """Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")""":
+                return
             print(er)
             bot.send_message(message.chat.id, f"**Error: **{er}")
     else:

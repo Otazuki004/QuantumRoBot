@@ -584,7 +584,7 @@ Repository Link 🔗 : __https://github.com/Otazuki004/QuantumRoBot.git__
 Embark on a journey of technological marvels at Hyper-Speed ⚡ with us. Explore, engage, and revel in the possibilities that await you.
 
 - Hyper Speed™**
-""")
+""", disable_web_page_preview=True)
 
 #RepolinkEND
 

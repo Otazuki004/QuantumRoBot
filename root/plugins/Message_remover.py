@@ -29,6 +29,8 @@ if allowbw == True:
         try:
             await message.delete()
         except Exception as e:
+            if str(e) == """Telegram says: [403 MESSAGE_DELETE_FORBIDDEN] - You don't have rights to delete messages in this chat, most likely because you are not the author of them (caused by "channels.DeleteMessages")""":
+                return
             print(e)
             await bot.send_message(message.chat.id, f"Error: {e}")
 

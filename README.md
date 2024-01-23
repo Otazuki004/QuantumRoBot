@@ -71,8 +71,8 @@ To get started with QuantumRoBot, simply add it to your Telegram group (`t.me/Qu
 ## Tested Environments
 
 - #### Termux-Letest [Tested OK]
-- #### Pyroid-MobilePythonIDE [Tested OK]
-- #### Heroku [Not Tested ❌❌]
+- #### Pyroid-MobilePythonIDE [Not Tested ❌]
+- #### Heroku [Tested OK]
 
 ## Data Collection
 

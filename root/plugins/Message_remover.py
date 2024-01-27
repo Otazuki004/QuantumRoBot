@@ -9,7 +9,7 @@ bad_words = [
     "Boobs", "Kunji", "Punda", "Otha", "Umbu", "Coolip", "Drugs", "Saaraku", 
     "Ponnupunda", "Motherfucker", "Fucker", "Fuckers", "Pundaboys", "Sunni", 
     "MadanGowri", "AdamGaming", "Ff", "Mr", "Pundaaaa", "Omala", "Ombuu", "Ombu", 
-    "Savu", "Podapunda", "Kenaaa", "cum", "creampie", "Pea", "Fuckit", "Just die",
+    "Savu", "Podapunda", "Kenaaa", "cum", "creampie", "Pee", "Fuckit", "Just die",
     "bitch", "Kunjaa", "Kanja", "bothaiporul", "KenaPunda", "MairuPunda", "Omalaoli",
     "sethapunda", "Othapunda", "Enadapunda", "Sexy", "ifuckit", "pornhub", "xhamster.desi", "pornhub.com", 
     "SavuleMairupunda", "OmalaPunda", "Kunjipunda", "pundaaaaaaaaaaaaaaa", "Othaaaa", "Othaaa", "Othaa", "Ommalaa", 

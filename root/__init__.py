@@ -8,7 +8,6 @@ prefix = [".","!","?","*","$","#","/"]
 a_id = "10187126" # Your Api Id
 a_hash = "ff197c0d23d7fe54c89b44ed092c1752" # Your Api Hash 
 b_tok = "6910428877:AAFIFbleAgAtf42tNQuty-gRbl4ybWIIPCQ" # Your Bot Token
-STRING_SESSION = "BQCbcXYASu4PAdVn0BO-dM5UcC8v67IAMO1TWgPEO62tHghGaOsteBB-2_S6Pnhki3V6Eeh0vdssFijhY8ccYa2mJJqydZhrA8Euj54_dWOLM9kIGUs6ipjl33yD_59b8uAygByhqrGNgxpVIkTIjVAeIN04-lBmwuCY6O6wY98ywnkZn_LRguklfU-qygk2QkSO_aIeNhDjciROOincq0AdvjUiNmCY1jnvKBNGT8ACsVWnQdC2-UQz4VkX2HdrjVTJ6nkPdlJUTMaT8APAP2nPaJRKX1rV0n7jFXiI1JaVQzI1Q868ANqcldJT8azM75F1Oc2ya3dfKGgYefszQOoiefnQQgAAAAFji4RfAA"
 OWN = 5965055071 #OWNERID
 CHAT_S_ID = "-1001859707851" #supportchatid
 B_NAME = "QuantumRoBot" #Botname

@@ -3,7 +3,7 @@ from root import OWN, FRD_MSG
 from root.__main__ import bot
 
 if FRD_MSG == True: #You can off this In __init__.py
-    @bot.on_message(filters.private)
+    @bot.on_message(filters.private & filters.all)
     async def forward(_, message):
         CID = message.chat.id
         MID = message.id
